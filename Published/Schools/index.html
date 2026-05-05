@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Information — Land O' Lakes Local</title>
+<meta name="description" content="Pasco County Schools quick links for Land O' Lakes families — parent portal, calendars, lunch menus, enrollment, and more.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #f2b6c1;
+    --pink-dark: #d4829a;
+    --teal: #3fa7a0;
+    --teal-dark: #2a7a75;
+    --black: #111111;
+    --off-black: #1e1e1e;
+    --white: #ffffff;
+    --gray-50: #f9f9f9;
+    --gray-200: #e4e4e4;
+    --gray-400: #999;
+    --gray-600: #555;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--black); min-height: 100vh; }
+
+  /* NAV */
+  nav { background: var(--black); padding: 0 clamp(20px, 5vw, 72px); display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 600; color: var(--white); text-decoration: none; letter-spacing: -0.01em; }
+  .nav-logo span { color: var(--pink); }
+  .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; }
+  .nav-links a { font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.15s; }
+  .nav-links a:hover { color: var(--white); }
+  .nav-cta { background: var(--pink) !important; color: var(--black) !important; padding: 7px 16px; border-radius: 99px; font-size: 12px !important; font-weight: 700 !important; }
+  .nav-cta:hover { background: var(--pink-dark) !important; color: var(--white) !important; }
+
+  /* HEADER */
+  .page-header { background: var(--black); padding: clamp(48px, 7vw, 80px) clamp(20px, 5vw, 72px) clamp(40px, 5vw, 64px); border-bottom: 4px solid var(--pink); }
+  .page-header-inner { max-width: 720px; margin: 0 auto; }
+  .breadcrumb { font-size: 12px; color: rgba(255,255,255,0.35); margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
+  .breadcrumb a { color: var(--teal); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .page-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .page-eyebrow::before { content: ''; display: inline-block; width: 24px; height: 1px; background: var(--teal); }
+  .page-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 5vw, 56px); font-weight: 700; color: var(--white); line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 16px; }
+  .page-title em { font-style: italic; color: var(--pink); }
+  .page-sub { font-size: 15px; color: rgba(255,255,255,0.5); line-height: 1.75; }
+
+  /* LINK LIST */
+  .link-section { max-width: 720px; margin: 0 auto; padding: clamp(48px, 7vw, 72px) clamp(20px, 5vw, 72px); }
+  .link-list { display: flex; flex-direction: column; gap: 12px; }
+  .link-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 14px;
+    padding: 18px 22px;
+    text-decoration: none;
+    color: var(--black);
+    transition: box-shadow 0.15s, transform 0.1s, border-color 0.15s;
+  }
+  .link-card:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+    border-color: var(--teal);
+  }
+  .link-card-emoji {
+    font-size: 24px;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--gray-200);
+  }
+  .link-card-text { flex: 1; }
+  .link-card-title { font-size: 15px; font-weight: 600; color: var(--black); margin-bottom: 2px; }
+  .link-card-url { font-size: 12px; color: var(--gray-400); }
+  .link-card-arrow { font-size: 16px; color: var(--teal); flex-shrink: 0; transition: transform 0.15s; }
+  .link-card:hover .link-card-arrow { transform: translateX(3px); }
+
+  .section-note { font-size: 13px; color: var(--gray-600); line-height: 1.7; margin-bottom: 28px; }
+  .section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .section-label::before { content: ''; display: inline-block; width: 20px; height: 1px; background: var(--teal); }
+
+  /* FOOTER */
+  footer { background: var(--off-black); padding: 36px clamp(20px, 5vw, 72px); border-top: 1px solid rgba(255,255,255,0.06); margin-top: 24px; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+  .footer-brand { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--white); }
+  .footer-brand span { color: var(--pink); }
+  .footer-tagline { font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 3px; }
+  .footer-links { display: flex; gap: 20px; list-style: none; flex-wrap: wrap; }
+  .footer-links a { font-size: 12px; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.15s; }
+  .footer-links a:hover { color: rgba(255,255,255,0.8); }
+
+  @media (max-width: 700px) {
+    nav ul { display: none; }
+    .link-card-url { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">Land O' <span>Lakes</span> Local</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/connerton/index.html">Connerton</a></li>
+    <li><a href="https://jenniferrose.co" target="_blank" class="nav-cta">Jennifer Rose, Realtor</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="breadcrumb">
+      <a href="/">Land O' Lakes Local</a> <span>›</span> <span>School Information</span>
+    </div>
+    <div class="page-eyebrow">Pasco County Schools</div>
+    <h1 class="page-title">School<br><em>Quick Links</em></h1>
+    <p class="page-sub">Handy links for Pasco County families — parent portal, lunch menus, calendars, enrollment, and more. All in one place.</p>
+  </div>
+</div>
+
+<!-- LINKS -->
+<div class="link-section">
+  <div class="section-label">Pasco County Schools</div>
+  <p class="section-note">These are the official Pasco County Schools resources most families use day-to-day. Links open in a new tab.</p>
+
+  <div class="link-list">
+
+    <a href="https://www.facebook.com/share/g/19XqqGUJrq/?mibextid=wwXIfr" target="_blank" class="link-card">
+      <div class="link-card-emoji">🔆</div>
+      <div class="link-card-text">
+        <div class="link-card-title">What's Poppin' Pasco</div>
+        <div class="link-card-url">Facebook Community Group</div>
+      </div>
+      <div class="link-card-arrow">→</div>
+    </a>
+
+    <a href="https://pasco.focusschoolsoftware.com/focus/?skipSAML=true" target="_blank" class="link-card">
+      <div class="link-card-emoji">✏️</div>
+      <div class="link-card-text">
+        <div class="link-card-title">MyStudent Parent Portal</div>
+        <div class="link-card-url">pasco.focusschoolsoftware.com</div>
+      </div>
+      <div class="link-card-arrow">→</div>
+    </a>
+
+    <a href="https://ryu.pasco.k12.fl.us/canvas/pre-login/select-user.html" target="_blank" class="link-card">
+      <div class="link-card-emoji">📚</div>
+      <div class="link-card-text">
+        <div class="link-card-title">MyLearning (Canvas)</div>
+        <div class="link-card-url">ryu.pasco.k12.fl.us</div>
+      </div>
+      <div class="link-card-arrow">→</div>
+    </a>
+
+    <a href="https://www.pasco.k12.fl.us/calendar" target="_blank" class="link-card">
+      <div class="link-card-emoji">🗓️</div>
+      <div class="link-card-text">
+        <div class="link-card-title">Pasco County Schools Calendar</div>
+        <div class="link-card-url">pasco.k12.fl.us/calendar</div>
+      </div>
+      <div class="link-card-arrow">→</div>
+    </a>
+
+    <a href="https://www.pasco.k12.fl.us/enrollment" target="_blank" class="link-card">
+      <div class="link-card-emoji">🖍️</div>
+      <div class="link-card-text">
+        <div class="link-card-title">New Student Enrollment Info</div>
+        <div class="link-card-url">pasco.k12.fl.us/enrollment</div>
+      </div>
+      <div class="link-card-arrow">→</div>
+    </a>
+
+    <a href="http://www.pasco.k12.fl.us/ed_choice/home" target="_blank" class="link-card">
+      <div class="link-card-emoji">👩‍🏫</div>
+      <div class="link-card-text">
+        <div class="link-card-title">School Choice Information</div>
+        <div class="link-card-url">pasco.k12.fl.us</div>
+      </div>
+      <div class="link-card-arrow">→</div>
+    </a>
+
+    <a href="https://apps.raptortech.com/Apply/MTU4OmVuLVVT" target="_blank" class="link-card">
+      <div class="link-card-emoji">🤚</div>
+      <div class="link-card-text">
+        <div class="link-card-title">Volunteer Application</div>
+        <div class="link-card-url">raptortech.com</div>
+      </div>
+      <div class="link-card-arrow">→</div>
+    </a>
+
+    <a href="http://schools.mealviewer.com" target="_blank" class="link-card">
+      <div class="link-card-emoji">🥪</div>
+      <div class="link-card-text">
+        <div class="link-card-title">MealViewer App — Lunch Menus by School</div>
+        <div class="link-card-url">schools.mealviewer.com</div>
+      </div>
+      <div class="link-card-arrow">→</div>
+    </a>
+
+    <a href="https://www.myschoolbucks.com/ver2/client/getclient.action?requestAction=home" target="_blank" class="link-card">
+      <div class="link-card-emoji">💵</div>
+      <div class="link-card-text">
+        <div class="link-card-title">MySchool Bucks — Cafeteria Accounts</div>
+        <div class="link-card-url">myschoolbucks.com</div>
+      </div>
+      <div class="link-card-arrow">→</div>
+    </a>
+
+    <a href="https://www.studentquickpay.com/pasco/" target="_blank" class="link-card">
+      <div class="link-card-emoji">💰</div>
+      <div class="link-card-text">
+        <div class="link-card-title">Rycor — Pay Student Fees</div>
+        <div class="link-card-url">studentquickpay.com/pasco</div>
+      </div>
+      <div class="link-card-arrow">→</div>
+    </a>
+
+    <a href="https://pasco.k12.fl.us/transportation/full-page/wheres-the-bus" target="_blank" class="link-card">
+      <div class="link-card-emoji">🚌</div>
+      <div class="link-card-text">
+        <div class="link-card-title">Where's The Bus App</div>
+        <div class="link-card-url">pasco.k12.fl.us/transportation</div>
+      </div>
+      <div class="link-card-arrow">→</div>
+    </a>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Land O' <span>Lakes</span> Local</div>
+      <div class="footer-tagline">A community directory for Land O' Lakes, FL</div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/connerton/index.html">Connerton Directory</a></li>
+      <li><a href="https://jenniferrose.co" target="_blank">Jennifer Rose, Realtor</a></li>
+      <li><a href="tel:7208384513">720-838-4513</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

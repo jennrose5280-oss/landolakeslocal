@@ -1,0 +1,132 @@
+[
+  {
+    "businessName": "Sunrise Lawn & Landscaping",
+    "category": "Home & Garden",
+    "description": "Family-owned lawn care and landscaping serving Connerton and surrounding communities. Weekly, bi-weekly, and one-time service available.",
+    "ownerName": "Marcus Webb",
+    "address": "21342 Sunridge Blvd, Land O' Lakes, FL 34638",
+    "phone": "813-555-0192",
+    "email": "marcus@sunriselawn.com",
+    "website": "https://sunriselawn.com",
+    "facebook": "https://facebook.com/sunriselawn",
+    "logoUrl": "",
+    "instagram": "@sunriselawnfl",
+    "serviceArea": "Connerton, Bexley, Suncoast Lakes",
+    "timestamp": "2025-04-15T09:22:00Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": true
+    },
+    "featured": true,
+    "approved": true
+  },
+  {
+    "businessName": "Paws & Claws Pet Sitting",
+    "category": "Pet Services",
+    "description": "Insured and bonded in-home pet sitting and dog walking. Your pets stay comfortable in their own home while you're away.",
+    "ownerName": "Dena Kowalski",
+    "address": "",
+    "phone": "813-555-0347",
+    "email": "dena@pawsandclawsfl.com",
+    "website": "https://pawsandclawsfl.com",
+    "facebook": "https://facebook.com/pawsandclawsfl",
+    "logoUrl": "",
+    "instagram": "@pawsandclawsfl",
+    "serviceArea": "Connerton, Oakstead, Wilderness Lake",
+    "timestamp": "2025-04-20T14:05:00Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": true
+    },
+    "discounts": {
+      "militaryVeteran": true,
+      "firstResponder": true,
+      "connertonResident": false
+    },
+    "featured": true,
+    "approved": true
+  },
+  {
+    "businessName": "Connerton Cuts",
+    "category": "Health & Beauty",
+    "description": "Mobile barbershop coming to you. Haircuts, beard trims, and fades for men and boys. Book online or call.",
+    "ownerName": "Terrence Mills",
+    "address": "Mobile – Connerton area",
+    "phone": "813-555-0581",
+    "email": "terrence@connertoncuts.com",
+    "website": "",
+    "facebook": "https://facebook.com/connertoncuts",
+    "logoUrl": "",
+    "instagram": "@connertoncuts",
+    "serviceArea": "Connerton, Land O' Lakes",
+    "timestamp": "2025-04-28T10:45:00Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": true,
+      "firstResponder": false,
+      "connertonResident": false
+    },
+    "featured": false,
+    "approved": true
+  },
+  {
+    "businessName": "Bright Horizon Tutoring",
+    "category": "Education & Tutoring",
+    "description": "K–12 tutoring in math, reading, and science. In-person and virtual sessions available. Free first session for new families.",
+    "ownerName": "Priya Nair",
+    "address": "Land O' Lakes, FL",
+    "phone": "813-555-0214",
+    "email": "priya@brighthorizontutoring.com",
+    "website": "https://brighthorizontutoring.com",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "",
+    "serviceArea": "Connerton, Bexley, Land O' Lakes",
+    "timestamp": "2025-05-01T08:30:00Z",
+    "badges": {
+      "connertonResident": false,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": false
+    },
+    "featured": false,
+    "approved": true
+  },
+  {
+    "businessName": "LakeStar Handyman",
+    "category": "Home Services",
+    "description": "Licensed handyman for repairs, installations, and small renovations. No job too small. Serving Connerton families since 2019.",
+    "ownerName": "Ron Deluca",
+    "address": "Land O' Lakes, FL 34638",
+    "phone": "813-555-0763",
+    "email": "ron@lakestarhandyman.com",
+    "website": "https://lakestarhandyman.com",
+    "facebook": "https://facebook.com/lakestarhandyman",
+    "logoUrl": "",
+    "instagram": "",
+    "serviceArea": "Connerton, Suncoast Lakes, Wilderness Lake",
+    "timestamp": "2025-05-02T16:10:00Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": true
+    },
+    "discounts": {
+      "militaryVeteran": true,
+      "firstResponder": true,
+      "connertonResident": true
+    },
+    "featured": false,
+    "approved": true
+  }
+]

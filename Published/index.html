@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Land O' Lakes Local — Your Community Resource</title>
+<meta name="description" content="Land O' Lakes Local is your neighborhood resource for community business directories, local guides, and market updates — curated by a Connerton neighbor.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #23354e;
+    --slate: #4e5e70;
+    --pink: #f2b6c1;
+    --pink-dark: #d4829a;
+    --teal: #3fa7a0;
+    --teal-dark: #2a7a75;
+    --black: #111111;
+    --off-black: #1e1e1e;
+    --white: #ffffff;
+    --gray-50: #f9f9f9;
+    --gray-100: #f2f2f2;
+    --gray-200: #e4e4e4;
+    --gray-400: #999;
+    --gray-600: #555;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--black); min-height: 100vh; }
+
+  /* NAV */
+  nav {
+    background: var(--black);
+    padding: 0 clamp(20px, 5vw, 72px);
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px; position: sticky; top: 0; z-index: 100;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 600; color: var(--white); text-decoration: none; letter-spacing: -0.01em; }
+  .nav-logo span { color: var(--pink); }
+  .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; }
+  .nav-links a { font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.5); text-decoration: none; letter-spacing: 0.02em; transition: color 0.15s; }
+  .nav-links a:hover { color: var(--white); }
+  .nav-cta { background: var(--pink) !important; color: var(--black) !important; padding: 7px 16px; border-radius: 99px; font-size: 12px !important; font-weight: 700 !important; transition: background 0.15s !important; }
+  .nav-cta:hover { background: var(--pink-dark) !important; color: var(--white) !important; }
+
+  /* HERO */
+  .hero { background: var(--black); padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 72px) clamp(48px, 6vw, 72px); }
+  .hero-inner { max-width: 1100px; margin: 0 auto; }
+  .hero-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .hero-eyebrow::before { content: ''; display: inline-block; width: 28px; height: 1px; background: var(--teal); }
+  .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(44px, 7vw, 84px); font-weight: 700; color: var(--white); line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 28px; max-width: 820px; }
+  .hero-title em { font-style: italic; color: var(--pink); }
+  .hero-sub { font-size: 17px; color: rgba(255,255,255,0.5); line-height: 1.75; max-width: 520px; margin-bottom: 40px; }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .btn-primary { background: var(--teal); color: var(--white); padding: 14px 30px; border-radius: 99px; font-size: 14px; font-weight: 600; text-decoration: none; transition: background 0.15s, transform 0.1s; display: inline-flex; align-items: center; gap: 7px; }
+  .btn-primary:hover { background: var(--teal-dark); transform: translateY(-1px); }
+  .btn-ghost { background: transparent; color: rgba(255,255,255,0.6); padding: 14px 30px; border-radius: 99px; font-size: 14px; font-weight: 500; text-decoration: none; border: 1px solid rgba(255,255,255,0.15); transition: all 0.15s; display: inline-flex; align-items: center; gap: 7px; }
+  .btn-ghost:hover { border-color: rgba(255,255,255,0.4); color: var(--white); }
+
+  /* PHOTO STRIP */
+  .photo-strip { background: var(--black); padding: 0 clamp(20px, 5vw, 72px) clamp(48px, 6vw, 72px); border-bottom: 4px solid var(--pink); }
+  .photo-strip-inner { max-width: 1100px; margin: 0 auto; }
+  .photo-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 10px; border-radius: 16px; overflow: hidden; }
+  .photo-main { height: 420px; overflow: hidden; }
+  .photo-main img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .photo-stack { display: flex; flex-direction: column; gap: 10px; }
+  .photo-sm { flex: 1; overflow: hidden; }
+  .photo-sm img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .photo-caption { margin-top: 16px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.3); text-align: right; }
+
+  /* STATS BAR */
+  .stats-bar { background: var(--gray-50); border-bottom: 1px solid var(--gray-200); padding: 0 clamp(20px, 5vw, 72px); }
+  .stats-bar-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: stretch; }
+  .stat { flex: 1; padding: 24px 28px; border-right: 1px solid var(--gray-200); display: flex; align-items: center; gap: 14px; }
+  .stat:last-child { border-right: none; }
+  .stat-num { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: var(--black); line-height: 1; flex-shrink: 0; }
+  .stat-num span { color: var(--teal); }
+  .stat-label { font-size: 13px; color: var(--gray-600); line-height: 1.4; }
+
+  /* NEIGHBORHOODS */
+  .neighborhoods { padding: clamp(64px, 8vw, 100px) clamp(20px, 5vw, 72px); background: var(--white); }
+  .neighborhoods-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+  .section-label::before { content: ''; display: inline-block; width: 24px; height: 1px; background: var(--teal); }
+  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 42px); font-weight: 700; color: var(--black); line-height: 1.15; margin-bottom: 16px; letter-spacing: -0.02em; }
+  .section-sub { font-size: 15px; color: var(--gray-600); line-height: 1.75; max-width: 560px; margin-bottom: 48px; }
+  .areas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+  .area-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 16px; overflow: hidden; text-decoration: none; transition: box-shadow 0.2s, transform 0.15s; display: block; }
+  .area-card:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.1); transform: translateY(-3px); }
+  .area-card-img { height: 180px; position: relative; overflow: hidden; }
+  .area-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s; }
+  .area-card:hover .area-card-img img { transform: scale(1.04); }
+  .area-card-img-placeholder { height: 180px; background: var(--gray-100); display: flex; align-items: center; justify-content: center; position: relative; }
+  .area-card-badge { position: absolute; top: 12px; right: 12px; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 10px; border-radius: 99px; }
+  .badge-live { background: var(--teal); color: var(--white); }
+  .badge-soon { background: rgba(0,0,0,0.35); color: rgba(255,255,255,0.8); }
+  .area-card-body { padding: 22px; }
+  .area-card-name { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--black); margin-bottom: 6px; letter-spacing: -0.01em; }
+  .area-card-desc { font-size: 13px; color: var(--gray-600); line-height: 1.65; margin-bottom: 16px; }
+  .area-card-meta { font-size: 12px; font-weight: 600; color: var(--teal); }
+  .area-card-meta.muted { color: var(--gray-400); }
+
+  /* ABOUT SECTION */
+  .about-section { background: var(--gray-50); padding: clamp(64px, 8vw, 100px) clamp(20px, 5vw, 72px); border-top: 1px solid var(--gray-200); }
+  .about-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+  .about-quote { font-family: 'Playfair Display', serif; font-size: clamp(20px, 2.5vw, 28px); font-style: italic; color: var(--black); line-height: 1.5; letter-spacing: -0.01em; margin-bottom: 28px; position: relative; padding-left: 24px; }
+  .about-quote::before { content: ''; position: absolute; left: 0; top: 4px; bottom: 4px; width: 3px; background: var(--pink); border-radius: 99px; }
+  .about-name { font-size: 16px; font-weight: 600; color: var(--black); margin-bottom: 3px; }
+  .about-title { font-size: 13px; color: var(--gray-600); margin-bottom: 20px; }
+  .about-body { font-size: 15px; color: var(--gray-600); line-height: 1.8; }
+  .about-body p { margin-bottom: 16px; }
+  .about-body p:last-child { margin-bottom: 0; }
+  .about-contact { margin-top: 24px; display: flex; flex-direction: column; gap: 8px; }
+  .about-contact a { font-size: 14px; color: var(--teal); text-decoration: none; font-weight: 500; }
+  .about-contact a:hover { text-decoration: underline; }
+
+  /* WHY */
+  .why { background: var(--black); padding: clamp(64px, 8vw, 100px) clamp(20px, 5vw, 72px); }
+  .why-inner { max-width: 1100px; margin: 0 auto; }
+  .why .section-label { color: var(--pink); }
+  .why .section-label::before { background: var(--pink); }
+  .why .section-title { color: var(--white); }
+  .why .section-sub { color: rgba(255,255,255,0.45); margin-bottom: 48px; max-width: 620px; }
+  .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .pillar-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 28px; }
+  .pillar-icon { font-size: 24px; margin-bottom: 14px; display: block; }
+  .pillar-title { font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+  .pillar-text { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; }
+
+  /* LIST */
+  .list-biz { padding: clamp(64px, 8vw, 100px) clamp(20px, 5vw, 72px); background: var(--white); border-top: 1px solid var(--gray-200); }
+  .list-biz-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+  .list-steps { display: flex; flex-direction: column; gap: 0; margin-top: 32px; }
+  .list-step { display: flex; gap: 18px; align-items: flex-start; padding-bottom: 28px; position: relative; }
+  .list-step:not(:last-child)::after { content: ''; position: absolute; left: 15px; top: 36px; bottom: 0; width: 1px; background: var(--gray-200); }
+  .list-step-num { width: 32px; height: 32px; border-radius: 50%; background: var(--black); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; position: relative; z-index: 1; }
+  .list-step-num.teal { background: var(--teal); }
+  .list-step-title { font-size: 15px; font-weight: 600; color: var(--black); margin-bottom: 3px; margin-top: 4px; }
+  .list-step-text { font-size: 13px; color: var(--gray-600); line-height: 1.6; }
+  .submit-box { background: var(--black); border-radius: 20px; padding: 36px; color: var(--white); position: relative; overflow: hidden; }
+  .submit-box::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--teal); }
+  .submit-box-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 8px; letter-spacing: -0.01em; }
+  .submit-box-sub { font-size: 14px; color: rgba(255,255,255,0.45); line-height: 1.7; margin-bottom: 28px; }
+  .submit-checks { display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+  .submit-check { display: flex; gap: 12px; align-items: center; font-size: 14px; color: rgba(255,255,255,0.65); }
+  .check-icon { width: 22px; height: 22px; border-radius: 50%; background: rgba(63,167,160,0.15); border: 1px solid rgba(63,167,160,0.25); display: flex; align-items: center; justify-content: center; font-size: 11px; color: var(--teal); font-weight: 700; flex-shrink: 0; }
+  .submit-btn { display: block; text-align: center; background: var(--pink); color: var(--black); padding: 15px 24px; border-radius: 99px; font-size: 15px; font-weight: 700; text-decoration: none; transition: background 0.15s, transform 0.1s; }
+  .submit-btn:hover { background: var(--pink-dark); color: var(--white); transform: translateY(-1px); }
+  .submit-note { font-size: 11px; color: rgba(255,255,255,0.3); text-align: center; margin-top: 12px; }
+
+  /* FOOTER */
+  footer { background: var(--off-black); padding: 40px clamp(20px, 5vw, 72px); border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+  .footer-brand { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--white); }
+  .footer-brand span { color: var(--pink); }
+  .footer-tagline { font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 3px; }
+  .footer-links { display: flex; gap: 24px; list-style: none; flex-wrap: wrap; }
+  .footer-links a { font-size: 12px; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.15s; }
+  .footer-links a:hover { color: rgba(255,255,255,0.8); }
+
+  @media (max-width: 900px) {
+    .about-inner { grid-template-columns: 1fr; gap: 40px; }
+    .pillars-grid { grid-template-columns: 1fr; }
+    .list-biz-inner { grid-template-columns: 1fr; }
+    .photo-grid { grid-template-columns: 1fr; }
+    .photo-stack { flex-direction: row; }
+    .photo-main { height: 260px; }
+    .photo-sm { height: 125px; }
+    nav ul { display: none; }
+    .stats-bar-inner { flex-wrap: wrap; }
+    .stat { border-right: none; border-bottom: 1px solid var(--gray-200); flex: 0 0 50%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">Land O' <span>Lakes</span> Local</a>
+  <ul class="nav-links">
+    <li><a href="/connerton/">Connerton</a></li>
+    <li><a href="/schools/">Schools</a></li>
+    <li><a href="#neighborhoods">Neighborhoods</a></li>
+    <li><a href="#list">List Free</a></li>
+    <li><a href="https://jenniferrose.co" target="_blank" class="nav-cta">Jennifer Rose, Realtor</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Land O' Lakes, Florida</div>
+    <h1 class="hero-title">Your neighbors.<br><em>Your businesses.</em></h1>
+    <p class="hero-sub">A free community directory for Land O' Lakes — where locals support locals, and your neighbor's business is just one click away.</p>
+    <div class="hero-actions">
+      <a href="/connerton/" class="btn-primary">Browse Connerton Directory →</a>
+      <a href="/schools/" class="btn-ghost">School Info</a>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip">
+  <div class="photo-strip-inner">
+    <div class="photo-grid">
+      <div class="photo-main">
+        <img src="77-web-or-mls-DJI_0746.jpg" alt="Aerial view of Connerton neighborhood">
+      </div>
+      <div class="photo-stack">
+        <div class="photo-sm"><img src="82-web-or-mls-DJI_0801.jpg" alt="Connerton fountain tower"></div>
+        <div class="photo-sm"><img src="46-RLD_7952.jpg" alt="Connerton entrance sign"></div>
+      </div>
+      <div class="photo-stack">
+        <div class="photo-sm"><img src="47-RLD_7931.jpg" alt="Connerton clock tower"></div>
+        <div class="photo-sm" style="background: var(--navy); display:flex; align-items:center; justify-content:center; padding: 20px;">
+          <div style="text-align:center;">
+            <div style="font-family:'Playfair Display',serif; font-size:20px; color:var(--white); font-weight:700; margin-bottom:6px; line-height:1.2;">Connerton</div>
+            <div style="font-size:11px; color:rgba(255,255,255,0.45); letter-spacing:0.1em; text-transform:uppercase;">Land O' Lakes, FL</div>
+            <div style="margin-top:14px; display:inline-block; background:var(--teal); color:#fff; font-size:10px; font-weight:700; padding:4px 12px; border-radius:99px; letter-spacing:0.08em; text-transform:uppercase;">Directory Live</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="photo-caption">Connerton Community · Land O' Lakes, Pasco County, FL</div>
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat">
+      <div class="stat-num">40<span>+</span></div>
+      <div class="stat-label">Local businesses<br>in the directory</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">11</div>
+      <div class="stat-label">Categories from<br>home services to food</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">1</div>
+      <div class="stat-label">Neighborhood live<br>now, more coming</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" style="color:var(--pink);">Free</div>
+      <div class="stat-label">Always free to browse<br>and free to list</div>
+    </div>
+  </div>
+</div>
+
+<!-- NEIGHBORHOODS -->
+<section class="neighborhoods" id="neighborhoods">
+  <div class="neighborhoods-inner">
+    <div class="section-label">Community directories</div>
+    <h2 class="section-title">Find businesses near you</h2>
+    <p class="section-sub">Starting in Connerton and growing across Land O' Lakes. Each directory is put together by people who live here, for people who live here.</p>
+    <div class="areas-grid">
+      <a href="/connerton/" class="area-card">
+        <div class="area-card-img">
+          <img src="46-RLD_7952.jpg" alt="Connerton entrance">
+          <span class="area-card-badge badge-live">Live Now</span>
+        </div>
+        <div class="area-card-body">
+          <div class="area-card-name">Connerton</div>
+          <div class="area-card-desc">40+ businesses across 11 categories — home services, food, pet care, health, and more.</div>
+          <div class="area-card-meta">Browse the directory →</div>
+        </div>
+      </a>
+      <div class="area-card" style="cursor:default;">
+        <div class="area-card-img-placeholder">
+          <div style="text-align:center; color:var(--gray-400);">
+            <div style="font-size:28px; margin-bottom:6px; opacity:0.4;">🌴</div>
+            <div style="font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;">Photo coming</div>
+          </div>
+          <span class="area-card-badge badge-soon">Coming Soon</span>
+        </div>
+        <div class="area-card-body">
+          <div class="area-card-name">Land O' Lakes</div>
+          <div class="area-card-desc">A broader directory for businesses serving the wider Land O' Lakes community.</div>
+          <div class="area-card-meta muted">Launching soon</div>
+        </div>
+      </div>
+      <div class="area-card" style="cursor:default;">
+        <div class="area-card-img-placeholder">
+          <div style="text-align:center; color:var(--gray-400);">
+            <div style="font-size:28px; margin-bottom:6px; opacity:0.4;">🌿</div>
+            <div style="font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;">Photo coming</div>
+          </div>
+          <span class="area-card-badge badge-soon">Coming Soon</span>
+        </div>
+        <div class="area-card-body">
+          <div class="area-card-name">Lutz &amp; Wesley Chapel</div>
+          <div class="area-card-desc">Expanding into neighboring communities as this project grows. Know a great local business? Tell us.</div>
+          <div class="area-card-meta muted">Launching soon</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section">
+  <div class="about-inner">
+    <div>
+      <div class="section-label">About this site</div>
+      <h2 class="section-title">A neighbor-built<br>directory</h2>
+      <div class="about-body">
+        <p>This directory started as a simple idea: when you move to a new neighborhood, finding trustworthy local businesses is harder than it should be. Word-of-mouth works — but only if you know who to ask.</p>
+        <p>Land O' Lakes Local is built to make that easier. It's a free, searchable guide to businesses that have a real connection to this community — people who live here, work here, or genuinely serve the people who do.</p>
+        <p>The site is curated and maintained by Jennifer Rose, a Connerton resident and local Realtor who spends a lot of time helping people get settled here. Connecting new neighbors with great local businesses felt like a natural extension of that.</p>
+        <p>When Jennifer isn't helping clients buy or sell in Land O' Lakes, she's probably at a Connerton community event — or looking up another small business to add to this list.</p>
+      </div>
+      <div class="about-contact">
+        <a href="https://jenniferrose.co" target="_blank">jenniferrose.co</a>
+        <a href="tel:7208384513">720-838-4513</a>
+        <a href="mailto:jenn@jenniferrose.co">jenn@jenniferrose.co</a>
+      </div>
+    </div>
+    <div>
+      <blockquote class="about-quote">"Every home has a story. Every neighbor has something to offer. I built this so we can find each other."</blockquote>
+      <div class="about-name">Jennifer Rose</div>
+      <div class="about-title">Connerton resident · Realtor, Real Broker · Licensed in FL &amp; CO</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="why-inner">
+    <div class="section-label">What makes this different</div>
+    <h2 class="section-title">A directory with community ties</h2>
+    <p class="section-sub">This isn't a platform where anyone can pay for placement. Every listing has been submitted by someone with a genuine connection to Land O' Lakes — and browsing or listing is always free.</p>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <span class="pillar-icon">🤝</span>
+        <div class="pillar-title">Community connections</div>
+        <div class="pillar-text">Businesses are listed because they have a real tie to the community — residents, local operators, and businesses that genuinely serve this area.</div>
+      </div>
+      <div class="pillar-card">
+        <span class="pillar-icon">🔍</span>
+        <div class="pillar-title">Useful filters</div>
+        <div class="pillar-text">Quickly find veteran-owned businesses, first responder discounts, and Connerton residents. Search by name, category, or keyword.</div>
+      </div>
+      <div class="pillar-card">
+        <span class="pillar-icon">🆓</span>
+        <div class="pillar-title">Free to list, free to browse</div>
+        <div class="pillar-text">There's no charge to submit a listing, and no charge to use the directory. This is a community resource — not a paid advertising platform.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIST YOUR BUSINESS -->
+<section class="list-biz" id="list">
+  <div class="list-biz-inner">
+    <div>
+      <div class="section-label">Get listed</div>
+      <h2 class="section-title">Is your business connected to Land O' Lakes?</h2>
+      <p class="section-sub">If you live here, work here, or serve this community — you belong in the directory. Your neighbors are already looking.</p>
+      <div class="list-steps">
+        <div class="list-step">
+          <div class="list-step-num">1</div>
+          <div>
+            <div class="list-step-title">Fill out the form</div>
+            <div class="list-step-text">Takes about 2 minutes — business name, contact info, category, and a short description.</div>
+          </div>
+        </div>
+        <div class="list-step">
+          <div class="list-step-num">2</div>
+          <div>
+            <div class="list-step-title">It gets reviewed</div>
+            <div class="list-step-text">Submissions are checked to confirm the community connection and that the listing looks complete.</div>
+          </div>
+        </div>
+        <div class="list-step">
+          <div class="list-step-num teal">3</div>
+          <div>
+            <div class="list-step-title">You're live</div>
+            <div class="list-step-text">Your business becomes searchable by everyone browsing the directory — usually within 2 business days.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="submit-box">
+      <div class="submit-box-title">Submit your business</div>
+      <div class="submit-box-sub">Free to list. No catch. Just a way for neighbors to find the businesses that are already part of their community.</div>
+      <div class="submit-checks">
+        <div class="submit-check"><div class="check-icon">✓</div>Takes about 2 minutes to complete</div>
+        <div class="submit-check"><div class="check-icon">✓</div>Business name, contact info, category &amp; description</div>
+        <div class="submit-check"><div class="check-icon">✓</div>Website, logo URL, and address are optional</div>
+        <div class="submit-check"><div class="check-icon">✓</div>Submissions reviewed and published within 2 business days</div>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank" class="submit-btn">Submit My Business →</a>
+      <div class="submit-note">Opens in Google Forms · Free forever</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Land O' <span>Lakes</span> Local</div>
+      <div class="footer-tagline">A community directory for Land O' Lakes, FL</div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="/connerton/">Connerton Directory</a></li>
+      <li><a href="/schools/">School Info</a></li>
+      <li><a href="https://jenniferrose.co" target="_blank">Jennifer Rose, Realtor</a></li>
+      <li><a href="tel:7208384513">720-838-4513</a></li>
+      <li><a href="mailto:jenn@jenniferrose.co">jenn@jenniferrose.co</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      const t = document.querySelector(this.getAttribute('href'));
+      if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+</body>
+</html>

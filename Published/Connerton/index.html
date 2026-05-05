@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Connerton Community Business Directory | Land O' Lakes Local</title>
+<meta name="description" content="Discover trusted local businesses in Connerton, Land O' Lakes, FL. Curated by Jennifer Rose, Real Broker — your Connerton neighbor and local real estate expert." />
+<meta property="og:title" content="Connerton Community Business Directory" />
+<meta property="og:description" content="Discover trusted local businesses run by your Connerton neighbors. Free to list. Curated by Jennifer Rose, Realtor." />
+<meta property="og:image" content="https://landolakeslocal.com/82-web-or-mls-dji_0801.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="800" />
+<meta property="og:url" content="https://landolakeslocal.com/connerton/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://landolakeslocal.com/82-web-or-mls-dji_0801.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+/* ═══════════════════════════════════════════════════
+   DESIGN TOKENS
+═══════════════════════════════════════════════════ */
+:root {
+  --black:       #111111;
+  --white:       #ffffff;
+  --gray-light:  #f9f9f9;
+  --teal:        #3fa7a0;
+  --teal-light:  #6cc4be;
+  --pink:        #f2b6c1;
+  --pink-dark:   #d4829a;
+  --gray-border: #e4e4e4;
+  --text-muted:  #555555;
+  --text-light:  #999999;
+  --text:        #111111;
+  --font-serif:  'Merriweather', Georgia, serif;
+  --font-sans:   'Source Sans 3', system-ui, sans-serif;
+  --r-sm: 4px; --r-md: 8px; --r-lg: 14px; --r-xl: 22px;
+  --sh-xs: 0 1px 4px rgba(0,0,0,.06);
+  --sh-sm: 0 2px 10px rgba(0,0,0,.08);
+  --sh-md: 0 6px 22px rgba(0,0,0,.11);
+}
+
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background: var(--white);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/* ═══════════════════════════════════════════════════
+   TOP NAV
+═══════════════════════════════════════════════════ */
+.top-bar {
+  background: var(--black);
+  padding: 11px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.top-bar-left { display: flex; align-items: center; gap: 20px; }
+.site-wordmark {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -.2px;
+}
+.site-wordmark span { color: var(--teal); }
+.top-back { font-size: .78rem; color: rgba(255,255,255,.45); font-weight: 500; transition: color .13s; }
+.top-back:hover { color: var(--teal-light); }
+.btn-teal {
+  background: var(--teal);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: .82rem;
+  padding: 9px 20px;
+  border-radius: var(--r-sm);
+  border: none;
+  cursor: pointer;
+  transition: background .13s, transform .1s;
+  display: inline-block;
+  white-space: nowrap;
+  letter-spacing: .01em;
+}
+.btn-teal:hover { background: var(--teal-light); transform: translateY(-1px); }
+.btn-black {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: .82rem;
+  padding: 9px 20px;
+  border-radius: var(--r-sm);
+  border: none;
+  cursor: pointer;
+  transition: background .13s, transform .1s;
+  display: inline-block;
+  white-space: nowrap;
+}
+.btn-black:hover { background: #333; transform: translateY(-1px); }
+.btn-white {
+  background: var(--white);
+  color: var(--teal);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: .9rem;
+  padding: 12px 28px;
+  border-radius: var(--r-sm);
+  border: none;
+  cursor: pointer;
+  transition: background .13s, transform .1s;
+  display: inline-block;
+}
+.btn-white:hover { background: var(--gray-light); transform: translateY(-1px); }
+
+/* ═══════════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════════ */
+.page-hero {
+  background: var(--black);
+  color: var(--white);
+  padding: 52px 24px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url('/82-web-or-mls-dji_0801.jpg');
+  background-size: cover;
+  background-position: center 30%;
+}
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.68);
+  z-index: 0;
+}
+.page-hero > * {
+  position: relative;
+  z-index: 1;
+}
+.hero-eyebrow {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 12px;
+}
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+.hero-sub {
+  font-size: .98rem;
+  color: rgba(255,255,255,.6);
+  font-weight: 300;
+  max-width: 480px;
+  margin: 0 auto 22px;
+}
+.hero-count-badge {
+  display: inline-block;
+  border: 2px solid rgba(255,255,255,.9);
+  border-radius: 100px;
+  padding: 5px 16px;
+  font-size: .76rem;
+  color: var(--white);
+  margin-bottom: 24px;
+  background: rgba(0,0,0,.45);
+  letter-spacing: .04em;
+  font-weight: 600;
+}
+.hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn-hero-primary {
+  background: var(--teal);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: .92rem;
+  padding: 13px 28px;
+  border-radius: var(--r-sm);
+  border: none;
+  cursor: pointer;
+  transition: background .13s, transform .1s;
+  display: inline-block;
+}
+.btn-hero-primary:hover { background: var(--teal-light); transform: translateY(-2px); }
+.btn-hero-outline {
+  background: rgba(0,0,0,.45);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: .92rem;
+  padding: 12px 28px;
+  border-radius: var(--r-sm);
+  border: 2px solid rgba(255,255,255,.8);
+  cursor: pointer;
+  transition: border-color .13s, background .13s;
+  display: inline-block;
+}
+.btn-hero-outline:hover { border-color: var(--teal-light); color: var(--teal-light); background: rgba(0,0,0,.6); }
+.hero-note { font-size: .72rem; color: rgba(255,255,255,.65); margin-top: 13px; font-style: italic; text-shadow: 0 1px 4px rgba(0,0,0,.5); }
+
+/* ═══════════════════════════════════════════════════
+   JENNIFER ROSE — CURATOR STRIP (top)
+═══════════════════════════════════════════════════ */
+.curator-strip {
+  background: var(--gray-light);
+  border-bottom: 1.5px solid var(--gray-border);
+  padding: 16px 24px;
+}
+.curator-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.curator-label { font-size: .64rem; font-weight: 700; text-transform: uppercase; letter-spacing: .11em; color: var(--text-light); margin-bottom: 3px; }
+.curator-name { font-family: var(--font-serif); font-size: .98rem; font-weight: 700; color: var(--black); line-height: 1.15; }
+.curator-title { font-size: .76rem; color: var(--text-light); margin-top: 1px; }
+.curator-sep { width: 1px; height: 36px; background: var(--gray-border); flex-shrink: 0; }
+.curator-contacts { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
+.curator-link { font-size: .8rem; color: var(--teal); font-weight: 600; display: flex; align-items: center; gap: 5px; transition: color .13s; }
+.curator-link:hover { color: var(--teal-light); }
+.curator-right { margin-left: auto; }
+
+/* ═══════════════════════════════════════════════════
+   JENNIFER ROSE — FULL BRAND SECTION (mid-page)
+   This is the main branding area — visible whether the
+   JSON is loaded or not. Always shows on the page.
+═══════════════════════════════════════════════════ */
+.jennifer-section {
+  background: var(--black);
+  color: var(--white);
+  padding: 56px 24px;
+}
+.jennifer-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 52px;
+  align-items: center;
+}
+.jennifer-eyebrow {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 10px;
+}
+.jennifer-name {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+.jennifer-title {
+  font-size: .88rem;
+  color: var(--teal-light);
+  font-weight: 600;
+  letter-spacing: .04em;
+  margin-bottom: 18px;
+}
+.jennifer-bio {
+  font-size: .9rem;
+  color: rgba(255,255,255,.65);
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+.jennifer-bio strong { color: var(--white); font-weight: 600; }
+.jennifer-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Stats row inside the Jennifer section */
+.jennifer-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.stat-card {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: var(--r-lg);
+  padding: 20px 18px;
+  text-align: center;
+}
+.stat-num {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--teal-light);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.stat-label {
+  font-size: .74rem;
+  color: rgba(255,255,255,.5);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* ═══════════════════════════════════════════════════
+   JENNIFER ROSE SECTION
+═══════════════════════════════════════════════════ */
+.jennifer-section { background: var(--black); color: var(--white); padding: 28px 24px; }
+.jennifer-inner { max-width: 1080px; margin: 0 auto; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+.jennifer-photo { width: 72px; height: 90px; border-radius: var(--r-md); object-fit: cover; object-position: center; border: 2px solid var(--teal); flex-shrink: 0; }
+.jennifer-eyebrow { font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--pink); margin-bottom: 3px; }
+.jennifer-name { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 900; line-height: 1.2; margin-bottom: 2px; }
+.jennifer-title { font-size: .75rem; color: var(--teal-light); margin-bottom: 10px; }
+.jennifer-bio { font-size: .82rem; color: rgba(255,255,255,.6); line-height: 1.6; margin-bottom: 12px; max-width: 480px; }
+.jennifer-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ═══════════════════════════════════════════════════
+   MAIN LAYOUT
+═══════════════════════════════════════════════════ */
+.main-wrap { max-width: 1080px; margin: 0 auto; padding: 36px 24px 80px; }
+
+/* ═══════════════════════════════════════════════════
+   SECTION HEADERS
+═══════════════════════════════════════════════════ */
+.sec-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 20px; }
+.sec-title { font-family: var(--font-serif); font-size: 1.22rem; font-weight: 700; color: var(--black); line-height: 1.2; }
+.sec-pill { font-size: .66rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--text-light); background: var(--gray-border); border-radius: 100px; padding: 2px 10px; }
+.sec-rule { border: none; border-top: 1.5px solid var(--gray-border); margin: 40px 0 36px; }
+
+/* ═══════════════════════════════════════════════════
+   FEATURED BLOCK
+═══════════════════════════════════════════════════ */
+.featured-block { background: var(--black); border-radius: var(--r-xl); padding: 28px; margin-bottom: 40px; }
+.featured-block .sec-title { color: var(--white); }
+.featured-block .sec-pill { background: rgba(255,255,255,.12); color: rgba(255,255,255,.5); }
+.featured-block .sec-title::before {
+  content: '';
+  display: inline-block;
+  width: 9px; height: 9px;
+  background: var(--pink);
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+  position: relative; top: -1px;
+}
+
+/* ═══════════════════════════════════════════════════
+   RECENTLY ADDED
+═══════════════════════════════════════════════════ */
+.recent-block { background: var(--gray-light); border: 1.5px solid var(--gray-border); border-radius: var(--r-xl); padding: 28px; margin-bottom: 40px; }
+
+/* ═══════════════════════════════════════════════════
+   FILTER PANEL
+═══════════════════════════════════════════════════ */
+.filter-panel {
+  background: var(--gray-light);
+  border: 1.5px solid var(--gray-border);
+  border-radius: var(--r-lg);
+  padding: 18px 22px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: flex-end;
+}
+.fg { display: flex; flex-direction: column; gap: 5px; min-width: 170px; flex: 1; }
+.fg label { font-size: .64rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var(--text-light); }
+.fg input, .fg select {
+  font-family: var(--font-sans); font-size: .88rem; color: var(--text);
+  background: var(--white); border: 1.5px solid var(--gray-border);
+  border-radius: var(--r-sm); padding: 8px 11px;
+  outline: none; transition: border-color .13s;
+  appearance: none; -webkit-appearance: none;
+}
+.fg input::placeholder { color: var(--text-light); }
+.fg input:focus, .fg select:focus { border-color: var(--teal); }
+.fg select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23999' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 10px center; padding-right: 28px;
+}
+.fg-toggles { display: flex; flex-direction: column; gap: 5px; }
+.fg-toggles > span { font-size: .64rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var(--text-light); }
+.toggle-row { display: flex; gap: 7px; flex-wrap: wrap; }
+.pill-btn {
+  padding: 6px 14px; border-radius: 100px;
+  border: 1.5px solid var(--gray-border); background: var(--white);
+  font-family: var(--font-sans); font-size: .76rem; font-weight: 600;
+  color: var(--text-muted); cursor: pointer; transition: all .12s; user-select: none;
+}
+.pill-btn.active { background: var(--teal); color: var(--white); border-color: var(--teal); }
+.pill-btn:hover:not(.active) { border-color: var(--teal); color: var(--teal); }
+.btn-reset {
+  padding: 8px 16px; border: 1.5px solid var(--gray-border);
+  border-radius: var(--r-sm); background: transparent;
+  font-family: var(--font-sans); font-size: .8rem; color: var(--text-light);
+  cursor: pointer; align-self: flex-end; transition: all .12s; white-space: nowrap;
+}
+.btn-reset:hover { border-color: var(--black); color: var(--black); }
+
+/* ═══════════════════════════════════════════════════
+   BUSINESS GRID + CARDS
+═══════════════════════════════════════════════════ */
+.biz-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(288px, 1fr)); gap: 18px; }
+.cat-section { margin-bottom: 48px; }
+
+.biz-card {
+  background: var(--white);
+  border: 1.5px solid var(--gray-border);
+  border-radius: var(--r-lg);
+  padding: 20px;
+  display: flex; flex-direction: column; gap: 12px;
+  box-shadow: var(--sh-xs);
+  transition: box-shadow .17s, transform .17s, border-color .17s;
+}
+.biz-card:hover { box-shadow: var(--sh-md); transform: translateY(-2px); border-color: #ccc; }
+.biz-card.is-featured {
+  background: var(--black); border-color: var(--black); color: var(--white);
+}
+.biz-card.is-featured .card-name { color: var(--white); }
+.biz-card.is-featured .card-owner { color: rgba(255,255,255,.45); }
+.biz-card.is-featured .card-desc { color: rgba(255,255,255,.6); }
+.biz-card.is-featured .contact-row { color: rgba(255,255,255,.6); }
+.biz-card.is-featured .contact-row a { color: var(--teal-light); }
+.biz-card.is-featured .card-serves { color: rgba(255,255,255,.4); border-top-color: rgba(255,255,255,.1); }
+.biz-card.is-featured .card-serves strong { color: rgba(255,255,255,.6); }
+.biz-card.is-featured .card-cat-tag { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.14); color: rgba(255,255,255,.5); }
+.biz-card.is-featured .card-initials { background: var(--teal); }
+
+.card-top { display: flex; gap: 13px; align-items: flex-start; }
+.card-logo { width: 52px; height: 52px; border-radius: var(--r-sm); object-fit: cover; flex-shrink: 0; border: 1px solid var(--gray-border); }
+.card-initials {
+  width: 52px; height: 52px; border-radius: var(--r-sm);
+  background: var(--teal); color: var(--white);
+  font-family: var(--font-serif); font-size: .96rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.card-head { flex: 1; min-width: 0; }
+.card-name { font-family: var(--font-serif); font-size: .98rem; font-weight: 700; color: var(--black); line-height: 1.25; word-break: break-word; }
+.card-owner { font-size: .73rem; color: var(--text-light); margin-top: 2px; }
+.card-cat-tag {
+  display: inline-block;
+  font-size: .61rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--text-light); background: var(--gray-light);
+  border: 1px solid var(--gray-border); border-radius: 100px; padding: 2px 10px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+.badge-row { display: flex; flex-wrap: wrap; gap: 5px; }
+.badge { font-size: .62rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 2px 9px; border-radius: 100px; border: 1.5px solid; line-height: 1.7; }
+.b-resident { color: var(--teal); background: rgba(63,167,160,.1); border-color: rgba(63,167,160,.35); }
+.b-hero     { color: var(--text-muted); background: var(--gray-border); border-color: #ccc; }
+.b-mil      { color: var(--pink-dark); background: rgba(242,182,193,.18); border-color: rgba(212,130,154,.4); }
+.b-fr       { color: var(--pink-dark); background: rgba(242,182,193,.18); border-color: rgba(212,130,154,.4); }
+.b-disc     { color: var(--teal); background: rgba(63,167,160,.1); border-color: rgba(63,167,160,.35); }
+
+.card-desc { font-size: .83rem; color: var(--text-muted); line-height: 1.65; }
+.card-contacts { display: flex; flex-direction: column; gap: 4px; }
+.contact-row { display: flex; align-items: flex-start; gap: 7px; font-size: .79rem; color: var(--text-muted); }
+.c-icon { width: 13px; text-align: center; flex-shrink: 0; margin-top: 1px; opacity: .45; font-size: .7rem; }
+.contact-row a { color: var(--teal); font-weight: 600; transition: color .12s; word-break: break-all; }
+.contact-row a:hover { color: var(--teal-light); }
+.card-serves { font-size: .72rem; color: var(--text-light); padding-top: 8px; border-top: 1px solid var(--gray-border); margin-top: 2px; }
+.card-serves strong { color: var(--text-muted); }
+
+/* ═══════════════════════════════════════════════════
+/* ═══════════════════════════════════════════════════
+   JENNIFER INTRO CARD — top of directory
+═══════════════════════════════════════════════════ */
+.jennifer-intro-card {
+  background: var(--black);
+  border-radius: var(--r-lg);
+  padding: 14px 18px;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.jic-photo {
+  width: 52px;
+  height: 64px;
+  border-radius: var(--r-sm);
+  object-fit: cover;
+  object-position: center center;
+  border: 2px solid var(--teal);
+  flex-shrink: 0;
+}
+.jic-body { flex: 1; min-width: 0; }
+.jic-eyebrow { font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--pink); margin-bottom: 2px; }
+.jic-name { font-family: var(--font-serif); font-size: .95rem; font-weight: 900; color: var(--white); line-height: 1.2; }
+.jic-title { font-size: .72rem; color: rgba(255,255,255,.5); margin-bottom: 6px; margin-top: 1px; }
+.jic-message { font-size: .8rem; color: rgba(255,255,255,.6); line-height: 1.6; margin-bottom: 10px; }
+.jic-contacts { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.jic-link { font-size: .76rem; color: var(--teal-light); font-weight: 600; transition: color .12s; }
+.jic-link:hover { color: var(--white); }
+.jic-cta { background: var(--teal); color: var(--white); font-family: var(--font-sans); font-weight: 700; font-size: .76rem; padding: 6px 14px; border-radius: var(--r-sm); display: inline-block; transition: background .12s; margin-left: auto; }
+.jic-cta:hover { background: var(--teal-light); }
+
+/* ═══════════════════════════════════════════════════
+   MID-PAGE SUBMIT CTA
+═══════════════════════════════════════════════════ */
+.mid-cta {
+  background: var(--pink);
+  color: var(--black);
+  border-radius: var(--r-xl);
+  padding: 36px 32px;
+  text-align: center;
+  margin: 40px 0;
+}
+.mid-cta h2 { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700; margin-bottom: 8px; }
+.mid-cta p { color: rgba(0,0,0,.6); font-size: .88rem; margin-bottom: 18px; }
+.mid-cta small { display: block; color: rgba(0,0,0,.4); font-size: .7rem; margin-top: 10px; font-style: italic; }
+
+/* ═══════════════════════════════════════════════════
+   RECENTLY ADDED — compact horizontal strip
+═══════════════════════════════════════════════════ */
+.recent-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+.recent-chip {
+  background: var(--white);
+  border: 1.5px solid var(--gray-border);
+  border-radius: var(--r-md);
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--sh-xs);
+  transition: box-shadow .15s, transform .15s;
+}
+.recent-chip:hover { box-shadow: var(--sh-sm); transform: translateY(-1px); }
+.recent-chip-initial {
+  width: 36px; height: 36px;
+  border-radius: var(--r-sm);
+  background: var(--teal);
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: .8rem;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.recent-chip-info { min-width: 0; }
+.recent-chip-name {
+  font-family: var(--font-serif);
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recent-chip-cat {
+  font-size: .68rem;
+  color: var(--text-light);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ═══════════════════════════════════════════════════
+   EMPTY + LOADING STATES
+   (shown when JSON file hasn't been uploaded yet)
+═══════════════════════════════════════════════════ */
+.directory-coming-soon {
+  background: var(--gray-light);
+  border: 1.5px dashed var(--gray-border);
+  border-radius: var(--r-xl);
+  padding: 52px 32px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.dcs-icon { font-size: 2.4rem; margin-bottom: 16px; }
+.dcs-title { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 700; color: var(--black); margin-bottom: 10px; }
+.dcs-sub { color: var(--text-muted); font-size: .9rem; max-width: 460px; margin: 0 auto 24px; line-height: 1.7; }
+.dcs-sub a { color: var(--teal); font-weight: 600; }
+
+.empty-state {
+  text-align: center; padding: 60px 24px;
+  background: var(--gray-light); border: 1.5px dashed var(--gray-border); border-radius: var(--r-xl);
+}
+.empty-icon { font-size: 2.2rem; margin-bottom: 14px; }
+.empty-state h3 { font-family: var(--font-serif); font-size: 1.1rem; color: var(--black); margin-bottom: 8px; }
+.empty-state p { color: var(--text-light); font-size: .86rem; margin-bottom: 20px; }
+.empty-state a { color: var(--teal); font-weight: 600; }
+
+#loading { text-align: center; padding: 70px 24px; color: var(--text-light); }
+.spin { width: 28px; height: 28px; border: 3px solid var(--gray-border); border-top-color: var(--teal); border-radius: 50%; animation: spin .65s linear infinite; display: inline-block; margin-bottom: 14px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ═══════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════ */
+.site-footer { background: var(--black); color: rgba(255,255,255,.42); text-align: center; padding: 44px 24px 30px; font-size: .78rem; }
+.footer-cta { margin-bottom: 24px; }
+.footer-cta p { color: rgba(255,255,255,.65); font-size: .9rem; margin-bottom: 14px; }
+.footer-links { margin-bottom: 12px; }
+.footer-links a { color: var(--teal-light); margin: 0 10px; transition: color .12s; }
+.footer-links a:hover { color: var(--white); }
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════════════ */
+@media (max-width: 760px) {
+  .jennifer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .jennifer-stats { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .curator-sep { display: none; }
+  .curator-right { margin-left: 0; }
+  .biz-grid { grid-template-columns: 1fr; }
+  .filter-panel { flex-direction: column; }
+  .fg { min-width: 100%; }
+  .mid-cta, .featured-block, .recent-block { padding: 22px 18px; }
+  .hero-title { font-size: 1.6rem; }
+  .jennifer-section { padding: 40px 24px; }
+  .jennifer-stats { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     TOP NAV
+═══════════════════════════════════════════════════ -->
+<nav class="top-bar">
+  <div class="top-bar-left">
+    <!--
+      DEPLOY NOTE: Replace the text logo with your real image:
+      <img src="/images/lol-logo.png" alt="Land O' Lakes Local" style="height:34px;">
+    -->
+    <div class="site-wordmark">Land O' Lakes <span>Local</span></div>
+    <a class="top-back" href="https://landolakeslocal.com/">← Back to Home</a>
+  </div>
+  <a class="btn-teal" href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank" rel="noopener">+ List Your Business</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════ -->
+<header class="page-hero">
+  <p class="hero-eyebrow">Connerton · Land O' Lakes, FL</p>
+  <h1 class="hero-title">Connerton Community<br>Business Directory</h1>
+  <p class="hero-sub">Discover trusted local businesses run by your neighbors.</p>
+  <div id="heroCount" class="hero-count-badge">Loading directory…</div>
+  <div class="hero-btns">
+    <a class="btn-hero-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank" rel="noopener">+ List Your Business Free</a>
+    <a class="btn-hero-outline" href="#directory">Browse the Directory ↓</a>
+  </div>
+  <p class="hero-note">Free to list. All submissions are reviewed before publishing.</p>
+</header>
+
+<!-- ═══════════════════════════════════════════════════
+     MAIN DIRECTORY CONTENT
+═══════════════════════════════════════════════════ -->
+<main class="main-wrap" id="directory">
+
+  <div id="loading"><div class="spin"></div><div>Loading local businesses…</div></div>
+
+  <div id="dir-root" style="display:none;">
+
+    <!-- FILTERS — first thing people see -->
+    <div class="filter-panel">
+      <div class="fg">
+        <label for="searchInput">Search</label>
+        <input type="text" id="searchInput" placeholder="Business name, service, area…" />
+      </div>
+      <div class="fg">
+        <label for="catFilter">Category</label>
+        <select id="catFilter"><option value="">All Categories</option></select>
+      </div>
+      <div class="fg-toggles">
+        <span>Badges</span>
+        <div class="toggle-row">
+          <span class="pill-btn" data-f="badge-resident">Connerton Resident</span>
+          <span class="pill-btn" data-f="badge-hero">Veteran / First Responder Owned</span>
+        </div>
+      </div>
+      <div class="fg-toggles">
+        <span>Discounts</span>
+        <div class="toggle-row">
+          <span class="pill-btn" data-f="disc-mil">Military / Veteran</span>
+          <span class="pill-btn" data-f="disc-fr">First Responder</span>
+          <span class="pill-btn" data-f="disc-res">Connerton Resident</span>
+        </div>
+      </div>
+      <button class="btn-reset" id="filterReset">Clear All</button>
+    </div>
+
+    <!-- JENNIFER INTRO CARD — matches original curator strip style -->
+    <div style="background:var(--black);border:1.5px solid #222;border-radius:var(--r-lg);padding:16px 22px;margin-bottom:32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+      <img src="/jennifer-headshot.png" alt="Jennifer Rose" style="width:48px;height:60px;border-radius:var(--r-sm);object-fit:cover;object-position:center;flex-shrink:0;" />
+      <div style="flex:1;min-width:180px;">
+        <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--pink);margin-bottom:2px;">This directory is brought to you by your neighbor</div>
+        <div style="font-family:var(--font-serif);font-size:.98rem;font-weight:700;color:var(--white);">Jennifer Rose</div>
+        <div style="font-size:.76rem;color:var(--teal-light);">Realtor · Connerton Resident</div>
+      </div>
+      <div style="width:1px;height:36px;background:rgba(255,255,255,.15);flex-shrink:0;"></div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
+        <a href="tel:7208384513" style="font-size:.8rem;color:var(--teal-light);font-weight:600;">📞 720-838-4513</a>
+        <a href="mailto:jenn@jenniferrose.co" style="font-size:.8rem;color:var(--teal-light);font-weight:600;">✉️ jenn@jenniferrose.co</a>
+      </div>
+      <a href="mailto:jenn@jenniferrose.co" style="background:var(--teal);color:var(--white);font-family:var(--font-sans);font-weight:600;font-size:.78rem;padding:8px 16px;border-radius:var(--r-sm);white-space:nowrap;">Work With Jennifer</a>
+    </div>
+
+    <!-- FEATURED -->
+    <div id="featuredBlock" class="featured-block" style="display:none;">
+      <div class="sec-header">
+        <h2 class="sec-title">Featured Businesses</h2>
+        <span id="featuredPill" class="sec-pill"></span>
+      </div>
+      <div id="featuredGrid" class="biz-grid"></div>
+    </div>
+
+    <!-- RECENTLY ADDED — compact strip, not a full grid -->
+    <div id="recentBlock" class="recent-block" style="display:none;">
+      <div class="sec-header">
+        <h2 class="sec-title">🆕 Recently Added</h2>
+        <span id="recentPill" class="sec-pill"></span>
+      </div>
+      <div id="recentGrid" class="recent-strip"></div>
+    </div>
+
+    <!-- SUBMIT CTA -->
+    <div class="mid-cta">
+      <h2>Own a Local Business?</h2>
+      <p>Get in front of your neighbors — completely free to list.</p>
+      <a class="btn-black" href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank" rel="noopener">Submit Your Business</a>
+      <small>Free to list. All submissions are reviewed before publishing.</small>
+    </div>
+
+    <!-- NO RESULTS -->
+    <div id="emptyState" class="empty-state" style="display:none;">
+      <div class="empty-icon">🔍</div>
+      <h3>No businesses found</h3>
+      <p>No businesses match those filters yet. Know one we should add?</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank">Submit a business →</a>
+    </div>
+
+    <!-- CATEGORY SECTIONS — built by JS -->
+    <div id="catSections"></div>
+
+  </div><!-- /dir-root -->
+
+  <!--
+    DIRECTORY NOT YET LOADED STATE
+    Shown when JSON file hasn't been uploaded to the server yet.
+    Replaced automatically the moment /data/connerton-businesses.json exists.
+  -->
+  <div id="dir-fallback" style="display:none;">
+    <div class="directory-coming-soon">
+      <div class="dcs-icon">📋</div>
+      <h3 class="dcs-title">Directory Coming Soon</h3>
+      <p class="dcs-sub">
+        We're building out the Connerton business directory right now.
+        Know a great local business? <a href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank">Submit it here</a> —
+        it's free and takes just a few minutes.
+      </p>
+      <a class="btn-teal" href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank" rel="noopener">+ Submit a Business</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════ -->
+<footer class="site-footer" id="submit">
+  <div class="footer-cta">
+    <p>Own or know a local business that belongs here?</p>
+    <a class="btn-hero-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank" rel="noopener">+ List Your Business Free</a>
+    <p style="margin-top:10px;font-size:.7rem;color:rgba(255,255,255,.3);">Free to list. All submissions reviewed before publishing.</p>
+  </div>
+  <div class="footer-links">
+    <a href="https://landolakeslocal.com/">LandOLakesLocal.com</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank">Submit a Business</a>
+    <a href="mailto:jenn@jenniferrose.co">Work With Jennifer</a>
+  </div>
+  <p style="max-width:680px;margin:16px auto 12px;font-size:.72rem;color:rgba(255,255,255,.35);line-height:1.6;">
+    <em>The businesses listed in this directory are community submissions and have not been independently verified by Land O' Lakes Local or Jennifer Rose, Real Broker. Always verify licenses, insurance, and credentials before hiring any service provider. Listing in this directory does not constitute an endorsement.</em>
+  </p>
+  <p>© 2026 Land O' Lakes Local · Curated by Jennifer Rose, Real Broker</p>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════════ -->
+<script>
+/* ─────────────────────────────────────────────────────
+   CATEGORY MAPPING
+   To rename or combine categories without touching JSON:
+   "Raw Sheet Value": "Display Name On Site"
+───────────────────────────────────────────────────────── */
+const CATEGORY_MAP = {
+  // "Lawn Care": "Lawn & Landscaping",
+};
+
+const F = {
+  search: "", category: "",
+  "badge-resident": false, "badge-hero": false,
+  "disc-mil": false, "disc-fr": false, "disc-res": false,
+};
+
+/* ── Helpers ───────────────────────────────────────── */
+function normalizeCategory(raw) {
+  if (!raw || !raw.trim()) return "Uncategorized";
+  const tc = raw.trim().replace(/\s+/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+  const found = Object.keys(CATEGORY_MAP).find(k => k.toLowerCase() === tc.toLowerCase());
+  return found ? CATEGORY_MAP[found] : tc;
+}
+function initials(name) {
+  if (!name) return "?";
+  return name.trim().split(/\s+/).slice(0,2).map(w => w[0].toUpperCase()).join("");
+}
+function esc(s) {
+  return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function fmtPhone(p) {
+  if (!p) return null;
+  const d = p.replace(/\D/g,"");
+  return { display: p.trim(), href: "tel:+" + (d.length===10?"1":"") + d };
+}
+
+/* ── Build card ────────────────────────────────────── */
+function buildCard(biz, showCatTag) {
+  const ph = fmtPhone(biz.phone);
+  const cat = normalizeCategory(biz.category);
+  const badges = [];
+  if (biz.badges?.connertonResident) badges.push(`<span class="badge b-resident">Connerton Resident</span>`);
+  if (biz.badges?.heroOwned)         badges.push(`<span class="badge b-hero">Veteran / First Responder Owned</span>`);
+  if (biz.discounts?.militaryVeteran) badges.push(`<span class="badge b-mil">Military / Veteran Discount</span>`);
+  if (biz.discounts?.firstResponder)  badges.push(`<span class="badge b-fr">First Responder Discount</span>`);
+  if (biz.discounts?.connertonResident) badges.push(`<span class="badge b-disc">Connerton Resident Discount</span>`);
+  const contacts = [];
+  if (ph)          contacts.push(`<div class="contact-row"><span class="c-icon">📞</span><a href="${esc(ph.href)}">${esc(ph.display)}</a></div>`);
+  if (biz.email)   contacts.push(`<div class="contact-row"><span class="c-icon">✉</span><a href="mailto:${esc(biz.email)}">${esc(biz.email)}</a></div>`);
+  if (biz.address) contacts.push(`<div class="contact-row"><span class="c-icon">📍</span><span>${esc(biz.address)}</span></div>`);
+  if (biz.website) contacts.push(`<div class="contact-row"><span class="c-icon">🌐</span><a href="${esc(biz.website)}" target="_blank" rel="noopener">${esc(biz.website.replace(/^https?:\/\//,""))}</a></div>`);
+  if (biz.facebook) contacts.push(`<div class="contact-row"><span class="c-icon">f</span><a href="${esc(biz.facebook)}" target="_blank" rel="noopener">Facebook Page</a></div>`);
+  if (biz.instagram) contacts.push(`<div class="contact-row"><span class="c-icon">📷</span><span>${esc(biz.instagram)}</span></div>`);
+  const logoHtml = biz.logoUrl
+    ? `<img class="card-logo" src="${esc(biz.logoUrl)}" alt="${esc(biz.businessName)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><div class="card-initials" style="display:none">${initials(biz.businessName)}</div>`
+    : `<div class="card-initials">${initials(biz.businessName)}</div>`;
+  return `
+    <div class="biz-card${biz.featured?" is-featured":""}">
+      ${showCatTag?`<span class="card-cat-tag">${esc(cat)}</span>`:""}
+      <div class="card-top">${logoHtml}<div class="card-head"><div class="card-name">${esc(biz.businessName)}</div>${biz.ownerName?`<div class="card-owner">Owner: ${esc(biz.ownerName)}</div>`:""}</div></div>
+      ${badges.length?`<div class="badge-row">${badges.join("")}</div>`:""}
+      ${biz.description?`<p class="card-desc">${esc(biz.description)}</p>`:""}
+      ${contacts.length?`<div class="card-contacts">${contacts.join("")}</div>`:""}
+      ${biz.serviceArea?`<div class="card-serves"><strong>Serves:</strong> ${esc(biz.serviceArea)}</div>`:""}
+    </div>`;
+}
+
+/* ── Filter match ──────────────────────────────────── */
+function matches(biz) {
+  const cat = normalizeCategory(biz.category);
+  if (F.category && cat !== F.category) return false;
+  if (F["badge-resident"] && !biz.badges?.connertonResident) return false;
+  if (F["badge-hero"]     && !biz.badges?.heroOwned)         return false;
+  if (F["disc-mil"]       && !biz.discounts?.militaryVeteran) return false;
+  if (F["disc-fr"]        && !biz.discounts?.firstResponder)  return false;
+  if (F["disc-res"]       && !biz.discounts?.connertonResident) return false;
+  if (F.search) {
+    const q = F.search.toLowerCase();
+    if (![biz.businessName, biz.description, biz.category, biz.serviceArea].join(" ").toLowerCase().includes(q)) return false;
+  }
+  return true;
+}
+
+/* ── Render main directory ─────────────────────────── */
+let ALL = [];
+
+function render() {
+  const visible = ALL.filter(b => matches(b))
+    .sort((a,b) => new Date(b.timestamp)-new Date(a.timestamp));
+  const wrap  = document.getElementById("catSections");
+  const empty = document.getElementById("emptyState");
+  if (!visible.length) { wrap.innerHTML=""; empty.style.display="block"; return; }
+  empty.style.display = "none";
+
+  const groups = {};
+  visible.forEach(b => { const c=normalizeCategory(b.category); (groups[c]=groups[c]||[]).push(b); });
+  const cats = Object.keys(groups).sort();
+
+  // Insert Jennifer card after the 2nd category (or at end if fewer)
+  let html = "";
+  cats.forEach((cat, i) => {
+    html += `<section class="cat-section">
+      <div class="sec-header">
+        <h2 class="sec-title">${esc(cat)}</h2>
+        <span class="sec-pill">${groups[cat].length} listing${groups[cat].length!==1?"s":""}</span>
+      </div>
+      <div class="biz-grid">${groups[cat].map(b=>buildCard(b,false)).join("")}</div>
+    </section>
+    <hr class="sec-rule" />`;
+  });
+  wrap.innerHTML = html;
+}
+
+function renderFeatured(approved) {
+  const list = approved.filter(b=>b.featured).sort((a,b)=>new Date(b.timestamp)-new Date(a.timestamp));
+  const block = document.getElementById("featuredBlock");
+  if (!list.length) { block.style.display="none"; return; }
+  block.style.display="block";
+  document.getElementById("featuredPill").textContent = list.length+" listed";
+  document.getElementById("featuredGrid").innerHTML = list.map(b=>buildCard(b,true)).join("");
+}
+
+function renderRecent(approved) {
+  const list = [...approved].sort((a,b)=>new Date(b.timestamp)-new Date(a.timestamp)).slice(0,8);
+  const block = document.getElementById("recentBlock");
+  if (!list.length) { block.style.display="none"; return; }
+  block.style.display="block";
+  document.getElementById("recentPill").textContent = "newest "+list.length;
+  document.getElementById("recentGrid").innerHTML = list.map(b => `
+    <div class="recent-chip">
+      <div class="recent-chip-initial">${initials(b.businessName)}</div>
+      <div class="recent-chip-info">
+        <div class="recent-chip-name">${esc(b.businessName)}</div>
+        <div class="recent-chip-cat">${esc(normalizeCategory(b.category))}</div>
+      </div>
+    </div>`).join("");
+}
+
+function buildCategoryFilter(approved) {
+  const cats = [...new Set(approved.map(b=>normalizeCategory(b.category)))].sort();
+  const sel = document.getElementById("catFilter");
+  cats.forEach(cat => { const o=document.createElement("option"); o.value=cat; o.textContent=cat; sel.appendChild(o); });
+}
+
+/* ── Init ──────────────────────────────────────────── */
+async function init() {
+  let data;
+  try {
+    const res = await fetch("/data/connerton-businesses.json");
+    if (!res.ok) throw new Error("not found");
+    data = await res.json();
+  } catch(e) {
+    // JSON file not uploaded yet — show friendly fallback, not an error
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("dir-fallback").style.display = "block";
+    document.getElementById("heroCount").textContent = "Directory coming soon";
+    return;
+  }
+
+  ALL = data;
+  const approved = ALL;
+
+  document.getElementById("heroCount").textContent =
+    approved.length + " local business" + (approved.length!==1?"es":"") + " listed";
+
+  buildCategoryFilter(approved);
+  renderFeatured(approved);
+  renderRecent(approved);
+  render();
+
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("dir-root").style.display = "block";
+
+  document.getElementById("searchInput").addEventListener("input", e => { F.search=e.target.value.trim(); render(); });
+  document.getElementById("catFilter").addEventListener("change", e => { F.category=e.target.value; render(); });
+  document.querySelectorAll(".pill-btn").forEach(btn => {
+    btn.addEventListener("click", () => { const k=btn.dataset.f; F[k]=!F[k]; btn.classList.toggle("active",F[k]); render(); });
+  });
+  document.getElementById("filterReset").addEventListener("click", () => {
+    F.search=""; F.category="";
+    ["badge-resident","badge-hero","disc-mil","disc-fr","disc-res"].forEach(k=>F[k]=false);
+    document.getElementById("searchInput").value="";
+    document.getElementById("catFilter").value="";
+    document.querySelectorAll(".pill-btn").forEach(b=>b.classList.remove("active"));
+    render();
+  });
+}
+
+init();
+</script>
+</body>
+</html>
