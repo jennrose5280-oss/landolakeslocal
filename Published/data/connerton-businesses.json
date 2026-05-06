@@ -208,32 +208,6 @@
     "approved": true
   },
   {
-    "businessName": "Dps Flooring Kitchen and Bath Inc",
-    "category": "Home Improvement (Remodeling, Flooring, Cabinetry, Fencing, Patios, Windows, Etc)",
-    "description": "Family owned and operated General contracting company. We specialize in all flooring, kitchen remodels and bathroom remodels.",
-    "ownerName": "Stephanie Bass Johnny Bass",
-    "address": "4400 landolakes blvd",
-    "phone": "813-469-4298",
-    "email": "Johnnybass87@gmail.com",
-    "website": "",
-    "facebook": "",
-    "logoUrl": "",
-    "instagram": "Dpsflooring_home",
-    "serviceArea": "50 miles in every direction outside of Tampa",
-    "timestamp": "2026-03-09T18:59:23.157Z",
-    "badges": {
-      "connertonResident": true,
-      "heroOwned": false
-    },
-    "discounts": {
-      "militaryVeteran": true,
-      "firstResponder": false,
-      "connertonResident": true
-    },
-    "featured": false,
-    "approved": true
-  },
-  {
     "businessName": "Florida Water Testing",
     "category": "Home Improvement (Remodeling, Flooring, Cabinetry, Fencing, Patios, Windows, Etc)",
     "description": "Water Treatment Systems",
