@@ -1506,5 +1506,109 @@
     },
     "featured": false,
     "approved": true
+  },
+  {
+    "businessName": "The Wilkins Way Commercial Group",
+    "category": "Real Estate (Agents, Lenders, Movers, Stagers, Etc)",
+    "description": "I help business owners buy, sell and lease commercial properties in the Greater Tampa Bay Area.",
+    "ownerName": "Tina Jolly",
+    "address": "",
+    "phone": "813-309-4815",
+    "email": "Tina@homeruntampa.com",
+    "website": "",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "Tina jolly realtor",
+    "serviceArea": "Pasco, Hillsborough, Hernando",
+    "timestamp": "2026-05-06T00:55:39.476Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": true,
+      "firstResponder": true,
+      "connertonResident": true
+    },
+    "featured": false,
+    "approved": true
+  },
+  {
+    "businessName": "Tranquil Tides Psychiatry and Wellness",
+    "category": "Health & Wellness (Fitness Trainers, Counselors/ Therapists, Nutrition Coaches, Massage Therapists, Etc)",
+    "description": "Psychiatry (medication management) amd therapy services for ages 6 and older. Insurance and self pay options. Telemedicine and In-Person appointments available.",
+    "ownerName": "Carey Krause",
+    "address": "28951 Wesley Chapel Blvd",
+    "phone": "813-807-5269",
+    "email": "Tranquiltideswellness@gmail.com",
+    "website": "https://Www.tranquiltideswellness.com",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "",
+    "serviceArea": "",
+    "timestamp": "2026-05-06T01:12:38.389Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": false
+    },
+    "featured": false,
+    "approved": true
+  },
+  {
+    "businessName": "Tropical IV and Wellness Spa",
+    "category": "Health & Wellness (Fitness Trainers, Counselors/ Therapists, Nutrition Coaches, Massage Therapists, Etc)",
+    "description": "Offers Wellness services (IV hydration,  weight loss, vitamin replenishment, inflammation reduction, and recovery)",
+    "ownerName": "Richard Krause",
+    "address": "28951 Wesley Chapel Blvd",
+    "phone": "8137961727",
+    "email": "Tropicalivfl@gmail.com",
+    "website": "https://Www.tropicaliv.com",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "",
+    "serviceArea": "",
+    "timestamp": "2026-05-06T01:15:06.680Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": false
+    },
+    "featured": false,
+    "approved": true
+  },
+  {
+    "businessName": "Ugos Notary Services LLC",
+    "category": "Professional Services (Insurance Agents, Financial Planners, Attorneys, Tax Professionals, Etc)",
+    "description": "Mobile and online Notary",
+    "ownerName": "Danny Ugo",
+    "address": "",
+    "phone": "8139975147",
+    "email": "Ugosnotary@yahoo.com",
+    "website": "",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "",
+    "serviceArea": "Pasco County",
+    "timestamp": "2026-05-06T03:49:45.276Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": true
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": true
+    },
+    "featured": false,
+    "approved": true
   }
 ]
