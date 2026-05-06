@@ -1610,5 +1610,31 @@
     },
     "featured": false,
     "approved": true
+  },
+  {
+    "businessName": "Sunshine State Gutters",
+    "category": "Home Services & Trades (Ie: HVAC, Plumbing, Handyman, Electrician, Etc.)",
+    "description": "We provide 7\" Seamless Gutter Installation.  With over 200 Five Star Reviews we are the premier gutter installer in Pasco County and surrounding areas.",
+    "ownerName": "Brian Welch",
+    "address": "8739 White Sage Way, Land O' Lakes, FL 34637",
+    "phone": "(813) 809-6007",
+    "email": "Brian@sunshinestategutters.com",
+    "website": "https://sunshinestategutters.com/",
+    "facebook": "https://www.facebook.com/sunshinestategutters",
+    "logoUrl": "",
+    "instagram": "https://www.instagram.com/sunshinestategutters/",
+    "serviceArea": "Pasco County, Hillsborough County, Pinellas County",
+    "timestamp": "2026-05-06T13:36:08.483Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": true,
+      "firstResponder": false,
+      "connertonResident": true
+    },
+    "featured": false,
+    "approved": true
   }
 ]
