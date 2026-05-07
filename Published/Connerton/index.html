@@ -144,10 +144,7 @@ img { display: block; max-width: 100%; }
   background: rgba(0,0,0,.68);
   z-index: 0;
 }
-.page-hero > * {
-  position: relative;
-  z-index: 1;
-}
+.page-hero > * { position: relative; z-index: 1; }
 .hero-eyebrow {
   font-size: .7rem;
   font-weight: 700;
@@ -212,120 +209,6 @@ img { display: block; max-width: 100%; }
 }
 .btn-hero-outline:hover { border-color: var(--teal-light); color: var(--teal-light); background: rgba(0,0,0,.6); }
 .hero-note { font-size: .72rem; color: rgba(255,255,255,.65); margin-top: 13px; font-style: italic; text-shadow: 0 1px 4px rgba(0,0,0,.5); }
-
-/* ═══════════════════════════════════════════════════
-   JENNIFER ROSE — CURATOR STRIP (top)
-═══════════════════════════════════════════════════ */
-.curator-strip {
-  background: var(--gray-light);
-  border-bottom: 1.5px solid var(--gray-border);
-  padding: 16px 24px;
-}
-.curator-inner {
-  max-width: 1080px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.curator-label { font-size: .64rem; font-weight: 700; text-transform: uppercase; letter-spacing: .11em; color: var(--text-light); margin-bottom: 3px; }
-.curator-name { font-family: var(--font-serif); font-size: .98rem; font-weight: 700; color: var(--black); line-height: 1.15; }
-.curator-title { font-size: .76rem; color: var(--text-light); margin-top: 1px; }
-.curator-sep { width: 1px; height: 36px; background: var(--gray-border); flex-shrink: 0; }
-.curator-contacts { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
-.curator-link { font-size: .8rem; color: var(--teal); font-weight: 600; display: flex; align-items: center; gap: 5px; transition: color .13s; }
-.curator-link:hover { color: var(--teal-light); }
-.curator-right { margin-left: auto; }
-
-/* ═══════════════════════════════════════════════════
-   JENNIFER ROSE — FULL BRAND SECTION (mid-page)
-   This is the main branding area — visible whether the
-   JSON is loaded or not. Always shows on the page.
-═══════════════════════════════════════════════════ */
-.jennifer-section {
-  background: var(--black);
-  color: var(--white);
-  padding: 56px 24px;
-}
-.jennifer-inner {
-  max-width: 980px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 52px;
-  align-items: center;
-}
-.jennifer-eyebrow {
-  font-size: .68rem;
-  font-weight: 700;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  color: var(--pink);
-  margin-bottom: 10px;
-}
-.jennifer-name {
-  font-family: var(--font-serif);
-  font-size: clamp(1.5rem, 3vw, 2.1rem);
-  font-weight: 900;
-  line-height: 1.15;
-  margin-bottom: 6px;
-}
-.jennifer-title {
-  font-size: .88rem;
-  color: var(--teal-light);
-  font-weight: 600;
-  letter-spacing: .04em;
-  margin-bottom: 18px;
-}
-.jennifer-bio {
-  font-size: .9rem;
-  color: rgba(255,255,255,.65);
-  line-height: 1.75;
-  margin-bottom: 24px;
-}
-.jennifer-bio strong { color: var(--white); font-weight: 600; }
-.jennifer-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-
-/* Stats row inside the Jennifer section */
-.jennifer-stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-.stat-card {
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.1);
-  border-radius: var(--r-lg);
-  padding: 20px 18px;
-  text-align: center;
-}
-.stat-num {
-  font-family: var(--font-serif);
-  font-size: 1.8rem;
-  font-weight: 900;
-  color: var(--teal-light);
-  line-height: 1;
-  margin-bottom: 6px;
-}
-.stat-label {
-  font-size: .74rem;
-  color: rgba(255,255,255,.5);
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-/* ═══════════════════════════════════════════════════
-   JENNIFER ROSE SECTION
-═══════════════════════════════════════════════════ */
-.jennifer-section { background: var(--black); color: var(--white); padding: 28px 24px; }
-.jennifer-inner { max-width: 1080px; margin: 0 auto; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-.jennifer-photo { width: 72px; height: 90px; border-radius: var(--r-md); object-fit: cover; object-position: center; border: 2px solid var(--teal); flex-shrink: 0; }
-.jennifer-eyebrow { font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--pink); margin-bottom: 3px; }
-.jennifer-name { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 900; line-height: 1.2; margin-bottom: 2px; }
-.jennifer-title { font-size: .75rem; color: var(--teal-light); margin-bottom: 10px; }
-.jennifer-bio { font-size: .82rem; color: rgba(255,255,255,.6); line-height: 1.6; margin-bottom: 12px; max-width: 480px; }
-.jennifer-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 
 /* ═══════════════════════════════════════════════════
    MAIN LAYOUT
@@ -438,6 +321,9 @@ img { display: block; max-width: 100%; }
 .biz-card.is-featured .card-serves strong { color: rgba(255,255,255,.6); }
 .biz-card.is-featured .card-cat-tag { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.14); color: rgba(255,255,255,.5); }
 .biz-card.is-featured .card-initials { background: var(--teal); }
+.biz-card.is-featured .recommend-btn { border-color: rgba(255,255,255,.2); color: rgba(255,255,255,.5); }
+.biz-card.is-featured .recommend-btn:hover:not(.voted) { border-color: var(--teal-light); color: var(--teal-light); }
+.biz-card.is-featured .recommend-btn.voted { background: rgba(63,167,160,.25); border-color: var(--teal-light); color: var(--teal-light); }
 
 .card-top { display: flex; gap: 13px; align-items: flex-start; }
 .card-logo { width: 52px; height: 52px; border-radius: var(--r-sm); object-fit: cover; flex-shrink: 0; border: 1px solid var(--gray-border); }
@@ -476,8 +362,62 @@ img { display: block; max-width: 100%; }
 .card-serves strong { color: var(--text-muted); }
 
 /* ═══════════════════════════════════════════════════
+   RECOMMEND BUTTON
+═══════════════════════════════════════════════════ */
+.recommend-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 4px;
+  padding: 8px 13px;
+  border-radius: var(--r-md);
+  border: 1.5px solid var(--gray-border);
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all .18s;
+  width: 100%;
+  justify-content: center;
+  user-select: none;
+}
+.recommend-btn:hover:not(.voted):not(.loading) {
+  border-color: var(--teal);
+  color: var(--teal);
+  background: rgba(63,167,160,.06);
+}
+.recommend-btn.voted {
+  background: rgba(63,167,160,.1);
+  border-color: var(--teal);
+  color: var(--teal);
+  cursor: default;
+}
+.recommend-btn.loading {
+  opacity: .6;
+  cursor: default;
+}
+.rec-icon { font-size: .9rem; transition: transform .2s; }
+.recommend-btn:not(.voted):not(.loading):hover .rec-icon { transform: scale(1.2); }
+.recommend-btn.voted .rec-icon { transform: scale(1.15); }
+.rec-count {
+  font-size: .72rem;
+  font-weight: 700;
+  background: var(--teal);
+  color: var(--white);
+  border-radius: 100px;
+  padding: 1px 8px;
+  margin-left: 2px;
+  transition: transform .2s;
+}
+.recommend-btn:not(.voted) .rec-count {
+  background: var(--gray-border);
+  color: var(--text-muted);
+}
+
 /* ═══════════════════════════════════════════════════
-   JENNIFER INTRO CARD — top of directory
+   JENNIFER INTRO CARD
 ═══════════════════════════════════════════════════ */
 .jennifer-intro-card {
   background: var(--black);
@@ -487,25 +427,17 @@ img { display: block; max-width: 100%; }
   display: flex;
   gap: 14px;
   align-items: center;
+  flex-wrap: wrap;
 }
-.jic-photo {
-  width: 52px;
-  height: 64px;
-  border-radius: var(--r-sm);
-  object-fit: cover;
-  object-position: center center;
-  border: 2px solid var(--teal);
-  flex-shrink: 0;
-}
+.jic-photo { width: 52px; height: 64px; border-radius: var(--r-sm); object-fit: cover; object-position: center center; border: 2px solid var(--teal); flex-shrink: 0; }
 .jic-body { flex: 1; min-width: 0; }
 .jic-eyebrow { font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--pink); margin-bottom: 2px; }
 .jic-name { font-family: var(--font-serif); font-size: .95rem; font-weight: 900; color: var(--white); line-height: 1.2; }
 .jic-title { font-size: .72rem; color: rgba(255,255,255,.5); margin-bottom: 6px; margin-top: 1px; }
-.jic-message { font-size: .8rem; color: rgba(255,255,255,.6); line-height: 1.6; margin-bottom: 10px; }
 .jic-contacts { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .jic-link { font-size: .76rem; color: var(--teal-light); font-weight: 600; transition: color .12s; }
 .jic-link:hover { color: var(--white); }
-.jic-cta { background: var(--teal); color: var(--white); font-family: var(--font-sans); font-weight: 700; font-size: .76rem; padding: 6px 14px; border-radius: var(--r-sm); display: inline-block; transition: background .12s; margin-left: auto; }
+.jic-cta { background: var(--teal); color: var(--white); font-family: var(--font-sans); font-weight: 700; font-size: .76rem; padding: 6px 14px; border-radius: var(--r-sm); display: inline-block; transition: background .12s; margin-left: auto; white-space: nowrap; }
 .jic-cta:hover { background: var(--teal-light); }
 
 /* ═══════════════════════════════════════════════════
@@ -524,7 +456,7 @@ img { display: block; max-width: 100%; }
 .mid-cta small { display: block; color: rgba(0,0,0,.4); font-size: .7rem; margin-top: 10px; font-style: italic; }
 
 /* ═══════════════════════════════════════════════════
-   RECENTLY ADDED — compact horizontal strip
+   RECENTLY ADDED — compact strip
 ═══════════════════════════════════════════════════ */
 .recent-strip {
   display: grid;
@@ -544,61 +476,31 @@ img { display: block; max-width: 100%; }
 }
 .recent-chip:hover { box-shadow: var(--sh-sm); transform: translateY(-1px); }
 .recent-chip-initial {
-  width: 36px; height: 36px;
-  border-radius: var(--r-sm);
-  background: var(--teal);
-  color: var(--white);
-  font-family: var(--font-serif);
-  font-size: .8rem;
-  font-weight: 700;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
+  width: 36px; height: 36px; border-radius: var(--r-sm);
+  background: var(--teal); color: var(--white);
+  font-family: var(--font-serif); font-size: .8rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
 .recent-chip-info { min-width: 0; }
-.recent-chip-name {
-  font-family: var(--font-serif);
-  font-size: .8rem;
-  font-weight: 700;
-  color: var(--black);
-  line-height: 1.2;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.recent-chip-cat {
-  font-size: .68rem;
-  color: var(--text-light);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+.recent-chip-name { font-family: var(--font-serif); font-size: .8rem; font-weight: 700; color: var(--black); line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.recent-chip-cat { font-size: .68rem; color: var(--text-light); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 /* ═══════════════════════════════════════════════════
    EMPTY + LOADING STATES
-   (shown when JSON file hasn't been uploaded yet)
 ═══════════════════════════════════════════════════ */
 .directory-coming-soon {
-  background: var(--gray-light);
-  border: 1.5px dashed var(--gray-border);
-  border-radius: var(--r-xl);
-  padding: 52px 32px;
-  text-align: center;
-  margin-bottom: 32px;
+  background: var(--gray-light); border: 1.5px dashed var(--gray-border);
+  border-radius: var(--r-xl); padding: 52px 32px; text-align: center; margin-bottom: 32px;
 }
 .dcs-icon { font-size: 2.4rem; margin-bottom: 16px; }
 .dcs-title { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 700; color: var(--black); margin-bottom: 10px; }
 .dcs-sub { color: var(--text-muted); font-size: .9rem; max-width: 460px; margin: 0 auto 24px; line-height: 1.7; }
 .dcs-sub a { color: var(--teal); font-weight: 600; }
-
-.empty-state {
-  text-align: center; padding: 60px 24px;
-  background: var(--gray-light); border: 1.5px dashed var(--gray-border); border-radius: var(--r-xl);
-}
+.empty-state { text-align: center; padding: 60px 24px; background: var(--gray-light); border: 1.5px dashed var(--gray-border); border-radius: var(--r-xl); }
 .empty-icon { font-size: 2.2rem; margin-bottom: 14px; }
 .empty-state h3 { font-family: var(--font-serif); font-size: 1.1rem; color: var(--black); margin-bottom: 8px; }
 .empty-state p { color: var(--text-light); font-size: .86rem; margin-bottom: 20px; }
 .empty-state a { color: var(--teal); font-weight: 600; }
-
 #loading { text-align: center; padding: 70px 24px; color: var(--text-light); }
 .spin { width: 28px; height: 28px; border: 3px solid var(--gray-border); border-top-color: var(--teal); border-radius: 50%; animation: spin .65s linear infinite; display: inline-block; margin-bottom: 14px; }
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -616,43 +518,29 @@ img { display: block; max-width: 100%; }
 /* ═══════════════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════════════ */
-@media (max-width: 760px) {
-  .jennifer-inner { grid-template-columns: 1fr; gap: 32px; }
-  .jennifer-stats { grid-template-columns: repeat(2, 1fr); }
-}
 @media (max-width: 640px) {
-  .curator-sep { display: none; }
-  .curator-right { margin-left: 0; }
   .biz-grid { grid-template-columns: 1fr; }
   .filter-panel { flex-direction: column; }
   .fg { min-width: 100%; }
   .mid-cta, .featured-block, .recent-block { padding: 22px 18px; }
   .hero-title { font-size: 1.6rem; }
-  .jennifer-section { padding: 40px 24px; }
-  .jennifer-stats { grid-template-columns: 1fr 1fr; }
+  .jennifer-intro-card { flex-direction: column; align-items: flex-start; }
+  .jic-cta { margin-left: 0; }
 }
 </style>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════════════
-     TOP NAV
-═══════════════════════════════════════════════════ -->
+<!-- TOP NAV -->
 <nav class="top-bar">
   <div class="top-bar-left">
-    <!--
-      DEPLOY NOTE: Replace the text logo with your real image:
-      <img src="/images/lol-logo.png" alt="Land O' Lakes Local" style="height:34px;">
-    -->
     <div class="site-wordmark">Land O' Lakes <span>Local</span></div>
     <a class="top-back" href="https://landolakeslocal.com/">← Back to Home</a>
   </div>
   <a class="btn-teal" href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank" rel="noopener">+ List Your Business</a>
 </nav>
 
-<!-- ═══════════════════════════════════════════════════
-     HERO
-═══════════════════════════════════════════════════ -->
+<!-- HERO -->
 <header class="page-hero">
   <p class="hero-eyebrow">Connerton · Land O' Lakes, FL</p>
   <h1 class="hero-title">Connerton Community<br>Business Directory</h1>
@@ -665,16 +553,14 @@ img { display: block; max-width: 100%; }
   <p class="hero-note">Free to list. All submissions are reviewed before publishing.</p>
 </header>
 
-<!-- ═══════════════════════════════════════════════════
-     MAIN DIRECTORY CONTENT
-═══════════════════════════════════════════════════ -->
+<!-- MAIN CONTENT -->
 <main class="main-wrap" id="directory">
 
   <div id="loading"><div class="spin"></div><div>Loading local businesses…</div></div>
 
   <div id="dir-root" style="display:none;">
 
-    <!-- FILTERS — first thing people see -->
+    <!-- FILTERS -->
     <div class="filter-panel">
       <div class="fg">
         <label for="searchInput">Search</label>
@@ -683,6 +569,14 @@ img { display: block; max-width: 100%; }
       <div class="fg">
         <label for="catFilter">Category</label>
         <select id="catFilter"><option value="">All Categories</option></select>
+      </div>
+      <div class="fg">
+        <label for="sortFilter">Sort By</label>
+        <select id="sortFilter">
+          <option value="newest">Newest First</option>
+          <option value="recommended">⭐ Most Recommended</option>
+          <option value="az">A → Z</option>
+        </select>
       </div>
       <div class="fg-toggles">
         <span>Badges</span>
@@ -702,20 +596,19 @@ img { display: block; max-width: 100%; }
       <button class="btn-reset" id="filterReset">Clear All</button>
     </div>
 
-    <!-- JENNIFER INTRO CARD — matches original curator strip style -->
-    <div style="background:var(--black);border:1.5px solid #222;border-radius:var(--r-lg);padding:16px 22px;margin-bottom:32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-      <img src="/jennifer-headshot.png" alt="Jennifer Rose" style="width:48px;height:60px;border-radius:var(--r-sm);object-fit:cover;object-position:center;flex-shrink:0;" />
-      <div style="flex:1;min-width:180px;">
-        <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--pink);margin-bottom:2px;">This directory is brought to you by your neighbor</div>
-        <div style="font-family:var(--font-serif);font-size:.98rem;font-weight:700;color:var(--white);">Jennifer Rose</div>
-        <div style="font-size:.76rem;color:var(--teal-light);">Realtor · Connerton Resident</div>
+    <!-- JENNIFER INTRO CARD -->
+    <div class="jennifer-intro-card">
+      <img class="jic-photo" src="/jennifer-headshot.png" alt="Jennifer Rose" />
+      <div class="jic-body">
+        <div class="jic-eyebrow">This directory is brought to you by your neighbor</div>
+        <div class="jic-name">Jennifer Rose</div>
+        <div class="jic-title">Realtor · Connerton Resident</div>
+        <div class="jic-contacts">
+          <a href="tel:7208384513" class="jic-link">📞 720-838-4513</a>
+          <a href="mailto:jenn@jenniferrose.co" class="jic-link">✉️ jenn@jenniferrose.co</a>
+        </div>
       </div>
-      <div style="width:1px;height:36px;background:rgba(255,255,255,.15);flex-shrink:0;"></div>
-      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
-        <a href="tel:7208384513" style="font-size:.8rem;color:var(--teal-light);font-weight:600;">📞 720-838-4513</a>
-        <a href="mailto:jenn@jenniferrose.co" style="font-size:.8rem;color:var(--teal-light);font-weight:600;">✉️ jenn@jenniferrose.co</a>
-      </div>
-      <a href="mailto:jenn@jenniferrose.co" style="background:var(--teal);color:var(--white);font-family:var(--font-sans);font-weight:600;font-size:.78rem;padding:8px 16px;border-radius:var(--r-sm);white-space:nowrap;">Work With Jennifer</a>
+      <a href="mailto:jenn@jenniferrose.co" class="jic-cta">Work With Jennifer</a>
     </div>
 
     <!-- FEATURED -->
@@ -727,7 +620,7 @@ img { display: block; max-width: 100%; }
       <div id="featuredGrid" class="biz-grid"></div>
     </div>
 
-    <!-- RECENTLY ADDED — compact strip, not a full grid -->
+    <!-- RECENTLY ADDED -->
     <div id="recentBlock" class="recent-block" style="display:none;">
       <div class="sec-header">
         <h2 class="sec-title">🆕 Recently Added</h2>
@@ -752,16 +645,11 @@ img { display: block; max-width: 100%; }
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank">Submit a business →</a>
     </div>
 
-    <!-- CATEGORY SECTIONS — built by JS -->
+    <!-- CATEGORY SECTIONS -->
     <div id="catSections"></div>
 
   </div><!-- /dir-root -->
 
-  <!--
-    DIRECTORY NOT YET LOADED STATE
-    Shown when JSON file hasn't been uploaded to the server yet.
-    Replaced automatically the moment /data/connerton-businesses.json exists.
-  -->
   <div id="dir-fallback" style="display:none;">
     <div class="directory-coming-soon">
       <div class="dcs-icon">📋</div>
@@ -777,9 +665,7 @@ img { display: block; max-width: 100%; }
 
 </main>
 
-<!-- ═══════════════════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer class="site-footer" id="submit">
   <div class="footer-cta">
     <p>Own or know a local business that belongs here?</p>
@@ -790,34 +676,47 @@ img { display: block; max-width: 100%; }
     <a href="https://landolakeslocal.com/">LandOLakesLocal.com</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank">Submit a Business</a>
     <a href="mailto:jenn@jenniferrose.co">Work With Jennifer</a>
+    <a href="mailto:jenn@jenniferrose.co?subject=Directory%20Concern">Report a Concern</a>
   </div>
   <p style="max-width:680px;margin:16px auto 12px;font-size:.72rem;color:rgba(255,255,255,.35);line-height:1.6;">
-    <em>The businesses listed in this directory are community submissions and have not been independently verified by Land O' Lakes Local or Jennifer Rose, Real Broker. Always verify licenses, insurance, and credentials before hiring any service provider. Listing in this directory does not constitute an endorsement.</em>
+    <em>The businesses listed in this directory are community submissions and have not been independently verified by Land O' Lakes Local or Jennifer Rose, Real Broker. Always verify licenses, insurance, and credentials before hiring any service provider. Listing in this directory does not constitute an endorsement. Listings may be removed at any time at our sole discretion.</em>
   </p>
   <p>© 2026 Land O' Lakes Local · Curated by Jennifer Rose, Real Broker</p>
 </footer>
 
-
-<!-- ═══════════════════════════════════════════════════
-     JAVASCRIPT
-═══════════════════════════════════════════════════ -->
 <script>
 /* ─────────────────────────────────────────────────────
    CATEGORY MAPPING
-   To rename or combine categories without touching JSON:
-   "Raw Sheet Value": "Display Name On Site"
 ───────────────────────────────────────────────────────── */
 const CATEGORY_MAP = {
   // "Lawn Care": "Lawn & Landscaping",
 };
 
+/* ─────────────────────────────────────────────────────
+   STATE
+───────────────────────────────────────────────────────── */
 const F = {
-  search: "", category: "",
+  search: "", category: "", sort: "newest",
   "badge-resident": false, "badge-hero": false,
   "disc-mil": false, "disc-fr": false, "disc-res": false,
 };
 
-/* ── Helpers ───────────────────────────────────────── */
+// Vote counts from server: { "Business Name": 12, ... }
+let VOTES = {};
+// What this device has already voted on (localStorage)
+const VOTED_KEY = "connerton_voted_v1";
+function getVoted() {
+  try { return JSON.parse(localStorage.getItem(VOTED_KEY) || "{}"); } catch { return {}; }
+}
+function markVoted(bizName) {
+  const v = getVoted(); v[bizName] = true;
+  try { localStorage.setItem(VOTED_KEY, JSON.stringify(v)); } catch {}
+}
+function hasVoted(bizName) { return !!getVoted()[bizName]; }
+
+/* ─────────────────────────────────────────────────────
+   HELPERS
+───────────────────────────────────────────────────────── */
 function normalizeCategory(raw) {
   if (!raw || !raw.trim()) return "Uncategorized";
   const tc = raw.trim().replace(/\s+/g, " ").replace(/\b\w/g, c => c.toUpperCase());
@@ -837,7 +736,65 @@ function fmtPhone(p) {
   return { display: p.trim(), href: "tel:+" + (d.length===10?"1":"") + d };
 }
 
-/* ── Build card ────────────────────────────────────── */
+/* ─────────────────────────────────────────────────────
+   VOTE API
+───────────────────────────────────────────────────────── */
+async function loadVotes() {
+  try {
+    const res = await fetch("/.netlify/functions/get-votes");
+    if (res.ok) VOTES = await res.json();
+  } catch { /* votes just show as 0 if offline */ }
+}
+
+async function submitVote(bizName, btnEl) {
+  if (hasVoted(bizName) || btnEl.classList.contains("loading")) return;
+
+  btnEl.classList.add("loading");
+  try {
+    const res = await fetch("/.netlify/functions/vote", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ key: bizName }),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      VOTES[bizName] = data.count;
+      markVoted(bizName);
+      updateBtn(btnEl, bizName, true);
+    }
+  } catch { /* silently fail */ }
+  btnEl.classList.remove("loading");
+}
+
+function updateBtn(btn, bizName, animate) {
+  const count = VOTES[bizName] || 0;
+  const voted = hasVoted(bizName);
+  btn.classList.toggle("voted", voted);
+
+  if (voted) {
+    const plural = count === 1 ? "neighbor recommends" : "neighbors recommend";
+    btn.innerHTML = `<span class="rec-icon">⭐</span><span>You and ${count > 1 ? (count - 1) + " other" : ""} ${count === 1 ? "You recommend this" : plural + " this"}</span><span class="rec-count">${count}</span>`;
+    // Simpler label when count is 1
+    if (count === 1) {
+      btn.innerHTML = `<span class="rec-icon">⭐</span><span>You recommend this</span><span class="rec-count">1</span>`;
+    } else {
+      btn.innerHTML = `<span class="rec-icon">⭐</span><span>You + ${count - 1} neighbor${count - 1 !== 1 ? "s" : ""} recommend this</span><span class="rec-count">${count}</span>`;
+    }
+  } else if (count > 0) {
+    btn.innerHTML = `<span class="rec-icon">👋</span><span>${count} neighbor${count !== 1 ? "s" : ""} recommend this · Add yours?</span><span class="rec-count">${count}</span>`;
+  } else {
+    btn.innerHTML = `<span class="rec-icon">👋</span><span>Recommend this business</span>`;
+  }
+
+  if (animate) {
+    btn.style.transform = "scale(1.03)";
+    setTimeout(() => btn.style.transform = "", 200);
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   BUILD CARD
+───────────────────────────────────────────────────────── */
 function buildCard(biz, showCatTag) {
   const ph = fmtPhone(biz.phone);
   const cat = normalizeCategory(biz.category);
@@ -857,6 +814,20 @@ function buildCard(biz, showCatTag) {
   const logoHtml = biz.logoUrl
     ? `<img class="card-logo" src="${esc(biz.logoUrl)}" alt="${esc(biz.businessName)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><div class="card-initials" style="display:none">${initials(biz.businessName)}</div>`
     : `<div class="card-initials">${initials(biz.businessName)}</div>`;
+
+  const voteCount = VOTES[biz.businessName] || 0;
+  const voted = hasVoted(biz.businessName);
+  let recLabel;
+  if (voted) {
+    recLabel = voteCount === 1
+      ? `<span class="rec-icon">⭐</span><span>You recommend this</span><span class="rec-count">1</span>`
+      : `<span class="rec-icon">⭐</span><span>You + ${voteCount - 1} neighbor${voteCount - 1 !== 1 ? "s" : ""} recommend this</span><span class="rec-count">${voteCount}</span>`;
+  } else if (voteCount > 0) {
+    recLabel = `<span class="rec-icon">👋</span><span>${voteCount} neighbor${voteCount !== 1 ? "s" : ""} recommend this · Add yours?</span><span class="rec-count">${voteCount}</span>`;
+  } else {
+    recLabel = `<span class="rec-icon">👋</span><span>Recommend this business</span>`;
+  }
+
   return `
     <div class="biz-card${biz.featured?" is-featured":""}">
       ${showCatTag?`<span class="card-cat-tag">${esc(cat)}</span>`:""}
@@ -865,10 +836,15 @@ function buildCard(biz, showCatTag) {
       ${biz.description?`<p class="card-desc">${esc(biz.description)}</p>`:""}
       ${contacts.length?`<div class="card-contacts">${contacts.join("")}</div>`:""}
       ${biz.serviceArea?`<div class="card-serves"><strong>Serves:</strong> ${esc(biz.serviceArea)}</div>`:""}
+      <button class="recommend-btn${voted?" voted":""}" data-biz="${esc(biz.businessName)}">${recLabel}</button>
     </div>`;
 }
 
-/* ── Filter match ──────────────────────────────────── */
+/* ─────────────────────────────────────────────────────
+   FILTER + SORT
+───────────────────────────────────────────────────────── */
+let ALL = [];
+
 function matches(biz) {
   const cat = normalizeCategory(biz.category);
   if (F.category && cat !== F.category) return false;
@@ -884,51 +860,90 @@ function matches(biz) {
   return true;
 }
 
-/* ── Render main directory ─────────────────────────── */
-let ALL = [];
+function sortBiz(list) {
+  if (F.sort === "recommended") {
+    return [...list].sort((a, b) => (VOTES[b.businessName] || 0) - (VOTES[a.businessName] || 0));
+  }
+  if (F.sort === "az") {
+    return [...list].sort((a, b) => a.businessName.localeCompare(b.businessName));
+  }
+  // newest (default)
+  return [...list].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+}
 
+/* ─────────────────────────────────────────────────────
+   RENDER
+───────────────────────────────────────────────────────── */
 function render() {
-  const visible = ALL.filter(b => matches(b))
-    .sort((a,b) => new Date(b.timestamp)-new Date(a.timestamp));
+  const filtered = ALL.filter(b => matches(b));
+  const visible = sortBiz(filtered);
   const wrap  = document.getElementById("catSections");
   const empty = document.getElementById("emptyState");
+
   if (!visible.length) { wrap.innerHTML=""; empty.style.display="block"; return; }
   empty.style.display = "none";
 
-  const groups = {};
-  visible.forEach(b => { const c=normalizeCategory(b.category); (groups[c]=groups[c]||[]).push(b); });
-  const cats = Object.keys(groups).sort();
+  // When sorting by recommended or A-Z, show flat list without category headers
+  if (F.sort === "recommended" || F.sort === "az") {
+    const topLabel = F.sort === "recommended"
+      ? `⭐ Most Recommended — ${visible.length} business${visible.length !== 1 ? "es" : ""}`
+      : `A → Z — ${visible.length} business${visible.length !== 1 ? "es" : ""}`;
+    wrap.innerHTML = `
+      <section class="cat-section">
+        <div class="sec-header">
+          <h2 class="sec-title">${topLabel}</h2>
+        </div>
+        <div class="biz-grid">${visible.map(b => buildCard(b, true)).join("")}</div>
+      </section>`;
+  } else {
+    // Group by category
+    const groups = {};
+    visible.forEach(b => { const c = normalizeCategory(b.category); (groups[c] = groups[c] || []).push(b); });
+    const cats = Object.keys(groups).sort();
+    let html = "";
+    cats.forEach(cat => {
+      html += `<section class="cat-section">
+        <div class="sec-header">
+          <h2 class="sec-title">${esc(cat)}</h2>
+          <span class="sec-pill">${groups[cat].length} listing${groups[cat].length !== 1 ? "s" : ""}</span>
+        </div>
+        <div class="biz-grid">${groups[cat].map(b => buildCard(b, false)).join("")}</div>
+      </section>
+      <hr class="sec-rule" />`;
+    });
+    wrap.innerHTML = html;
+  }
 
-  // Insert Jennifer card after the 2nd category (or at end if fewer)
-  let html = "";
-  cats.forEach((cat, i) => {
-    html += `<section class="cat-section">
-      <div class="sec-header">
-        <h2 class="sec-title">${esc(cat)}</h2>
-        <span class="sec-pill">${groups[cat].length} listing${groups[cat].length!==1?"s":""}</span>
-      </div>
-      <div class="biz-grid">${groups[cat].map(b=>buildCard(b,false)).join("")}</div>
-    </section>
-    <hr class="sec-rule" />`;
+  // Attach vote button listeners
+  wrap.querySelectorAll(".recommend-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const name = btn.dataset.biz;
+      if (!hasVoted(name)) submitVote(name, btn);
+    });
   });
-  wrap.innerHTML = html;
 }
 
 function renderFeatured(approved) {
-  const list = approved.filter(b=>b.featured).sort((a,b)=>new Date(b.timestamp)-new Date(a.timestamp));
+  const list = approved.filter(b => b.featured).sort((a,b) => new Date(b.timestamp) - new Date(a.timestamp));
   const block = document.getElementById("featuredBlock");
   if (!list.length) { block.style.display="none"; return; }
   block.style.display="block";
-  document.getElementById("featuredPill").textContent = list.length+" listed";
-  document.getElementById("featuredGrid").innerHTML = list.map(b=>buildCard(b,true)).join("");
+  document.getElementById("featuredPill").textContent = list.length + " listed";
+  document.getElementById("featuredGrid").innerHTML = list.map(b => buildCard(b, true)).join("");
+  block.querySelectorAll(".recommend-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const name = btn.dataset.biz;
+      if (!hasVoted(name)) submitVote(name, btn);
+    });
+  });
 }
 
 function renderRecent(approved) {
-  const list = [...approved].sort((a,b)=>new Date(b.timestamp)-new Date(a.timestamp)).slice(0,8);
+  const list = [...approved].sort((a,b) => new Date(b.timestamp) - new Date(a.timestamp)).slice(0,8);
   const block = document.getElementById("recentBlock");
   if (!list.length) { block.style.display="none"; return; }
   block.style.display="block";
-  document.getElementById("recentPill").textContent = "newest "+list.length;
+  document.getElementById("recentPill").textContent = "newest " + list.length;
   document.getElementById("recentGrid").innerHTML = list.map(b => `
     <div class="recent-chip">
       <div class="recent-chip-initial">${initials(b.businessName)}</div>
@@ -940,12 +955,14 @@ function renderRecent(approved) {
 }
 
 function buildCategoryFilter(approved) {
-  const cats = [...new Set(approved.map(b=>normalizeCategory(b.category)))].sort();
+  const cats = [...new Set(approved.map(b => normalizeCategory(b.category)))].sort();
   const sel = document.getElementById("catFilter");
-  cats.forEach(cat => { const o=document.createElement("option"); o.value=cat; o.textContent=cat; sel.appendChild(o); });
+  cats.forEach(cat => { const o = document.createElement("option"); o.value = cat; o.textContent = cat; sel.appendChild(o); });
 }
 
-/* ── Init ──────────────────────────────────────────── */
+/* ─────────────────────────────────────────────────────
+   INIT
+───────────────────────────────────────────────────────── */
 async function init() {
   let data;
   try {
@@ -953,18 +970,20 @@ async function init() {
     if (!res.ok) throw new Error("not found");
     data = await res.json();
   } catch(e) {
-    // JSON file not uploaded yet — show friendly fallback, not an error
     document.getElementById("loading").style.display = "none";
     document.getElementById("dir-fallback").style.display = "block";
     document.getElementById("heroCount").textContent = "Directory coming soon";
     return;
   }
 
+  // Load votes in parallel — directory still works if this fails
+  await loadVotes();
+
   ALL = data;
   const approved = ALL;
 
   document.getElementById("heroCount").textContent =
-    approved.length + " local business" + (approved.length!==1?"es":"") + " listed";
+    approved.length + " local business" + (approved.length !== 1 ? "es" : "") + " listed";
 
   buildCategoryFilter(approved);
   renderFeatured(approved);
@@ -974,17 +993,20 @@ async function init() {
   document.getElementById("loading").style.display = "none";
   document.getElementById("dir-root").style.display = "block";
 
-  document.getElementById("searchInput").addEventListener("input", e => { F.search=e.target.value.trim(); render(); });
-  document.getElementById("catFilter").addEventListener("change", e => { F.category=e.target.value; render(); });
+  // Event listeners
+  document.getElementById("searchInput").addEventListener("input", e => { F.search = e.target.value.trim(); render(); });
+  document.getElementById("catFilter").addEventListener("change", e => { F.category = e.target.value; render(); });
+  document.getElementById("sortFilter").addEventListener("change", e => { F.sort = e.target.value; render(); });
   document.querySelectorAll(".pill-btn").forEach(btn => {
-    btn.addEventListener("click", () => { const k=btn.dataset.f; F[k]=!F[k]; btn.classList.toggle("active",F[k]); render(); });
+    btn.addEventListener("click", () => { const k = btn.dataset.f; F[k] = !F[k]; btn.classList.toggle("active", F[k]); render(); });
   });
   document.getElementById("filterReset").addEventListener("click", () => {
-    F.search=""; F.category="";
-    ["badge-resident","badge-hero","disc-mil","disc-fr","disc-res"].forEach(k=>F[k]=false);
-    document.getElementById("searchInput").value="";
-    document.getElementById("catFilter").value="";
-    document.querySelectorAll(".pill-btn").forEach(b=>b.classList.remove("active"));
+    F.search = ""; F.category = ""; F.sort = "newest";
+    ["badge-resident","badge-hero","disc-mil","disc-fr","disc-res"].forEach(k => F[k] = false);
+    document.getElementById("searchInput").value = "";
+    document.getElementById("catFilter").value = "";
+    document.getElementById("sortFilter").value = "newest";
+    document.querySelectorAll(".pill-btn").forEach(b => b.classList.remove("active"));
     render();
   });
 }
