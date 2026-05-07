@@ -686,6 +686,30 @@ img { display: block; max-width: 100%; }
 
 <script>
 /* ─────────────────────────────────────────────────────
+   SUPABASE CONFIG
+───────────────────────────────────────────────────────── */
+const SUPABASE_URL = "https://yiealdvuhpwmrqimjjql.supabase.co";
+const SUPABASE_KEY = "sb_publishable_1YdYy5ZBQ6zynKa2kdIKYw_db-pCg_4";
+
+async function sbFetch(path, options = {}) {
+  const res = await fetch(SUPABASE_URL + path, {
+    ...options,
+    headers: {
+      "apikey": SUPABASE_KEY,
+      "Authorization": "Bearer " + SUPABASE_KEY,
+      "Content-Type": "application/json",
+      "Prefer": options.prefer || "",
+      ...(options.headers || {}),
+    },
+  });
+  if (!res.ok && res.status !== 204) {
+    const txt = await res.text();
+    throw new Error(res.status + ": " + txt);
+  }
+  try { return await res.json(); } catch { return null; }
+}
+
+/* ─────────────────────────────────────────────────────
    CATEGORY MAPPING
 ───────────────────────────────────────────────────────── */
 const CATEGORY_MAP = {
@@ -737,32 +761,42 @@ function fmtPhone(p) {
 }
 
 /* ─────────────────────────────────────────────────────
-   VOTE API
+   VOTE API — Supabase
 ───────────────────────────────────────────────────────── */
 async function loadVotes() {
   try {
-    const res = await fetch("/.netlify/functions/get-votes");
-    if (res.ok) VOTES = await res.json();
-  } catch { /* votes just show as 0 if offline */ }
+    const data = await sbFetch("/rest/v1/votes?select=business_name,count");
+    if (data) {
+      data.forEach(row => { VOTES[row.business_name] = row.count; });
+    }
+  } catch(e) { console.warn("Could not load votes:", e); }
 }
 
 async function submitVote(bizName, btnEl) {
   if (hasVoted(bizName) || btnEl.classList.contains("loading")) return;
-
   btnEl.classList.add("loading");
   try {
-    const res = await fetch("/.netlify/functions/vote", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ key: bizName }),
-    });
-    if (res.ok) {
-      const data = await res.json();
-      VOTES[bizName] = data.count;
-      markVoted(bizName);
-      updateBtn(btnEl, bizName, true);
+    // Check if row exists
+    const existing = await sbFetch("/rest/v1/votes?business_name=eq." + encodeURIComponent(bizName) + "&select=business_name,count");
+    if (existing && existing.length > 0) {
+      const newCount = (existing[0].count || 0) + 1;
+      await sbFetch("/rest/v1/votes?business_name=eq." + encodeURIComponent(bizName), {
+        method: "PATCH",
+        prefer: "return=representation",
+        body: JSON.stringify({ count: newCount }),
+      });
+      VOTES[bizName] = newCount;
+    } else {
+      await sbFetch("/rest/v1/votes", {
+        method: "POST",
+        prefer: "return=representation",
+        body: JSON.stringify({ business_name: bizName, count: 1 }),
+      });
+      VOTES[bizName] = 1;
     }
-  } catch { /* silently fail */ }
+    markVoted(bizName);
+    updateBtn(btnEl, bizName, true);
+  } catch(e) { console.warn("Vote failed:", e); }
   btnEl.classList.remove("loading");
 }
 
