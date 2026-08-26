@@ -1636,5 +1636,57 @@
     },
     "featured": false,
     "approved": true
+  },
+  {
+    "businessName": "Essential Wellness Works",
+    "category": "Health & Wellness (Fitness Trainers, Counselors/ Therapists, Nutrition Coaches, Massage Therapists, Etc)",
+    "description": "Essential Wellness Works is a nurse-led aesthetics and sugaring studio in Land O’ Lakes, Florida, specializing in professional sugaring hair removal, Brazilian sugaring, microchanneling and skincare.",
+    "ownerName": "Renee Bell",
+    "address": "",
+    "phone": "813-413-1442",
+    "email": "renee.bell@essentialwellnessworks.com",
+    "website": "https://www.essentialwellnessworks.com",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "@waxingalternativepro",
+    "serviceArea": "Land O' Lakes, Lutz, Trinity, Odessa, Carrollwood, Wesley Chapel",
+    "timestamp": "2026-08-15T05:49:47.161Z",
+    "badges": {
+      "connertonResident": false,
+      "heroOwned": true
+    },
+    "discounts": {
+      "militaryVeteran": true,
+      "firstResponder": true,
+      "connertonResident": true
+    },
+    "featured": false,
+    "approved": true
+  },
+  {
+    "businessName": "The Pasco Pressure Washing",
+    "category": "Home Services & Trades (Ie: HVAC, Plumbing, Handyman, Electrician, Etc.)",
+    "description": "The Pasco Pressure Washing provides professional house washing, roof cleaning, driveway cleaning, and commercial pressure washing throughout Land O' Lakes and surrounding Pasco County communities. Woman-owned and serving the area since 1990.",
+    "ownerName": "Jennifer Littlejohn",
+    "address": "",
+    "phone": "813-997-1460",
+    "email": "thepascopressurewashing@gmail.com",
+    "website": "https://www.thepascopressurewashing.com/",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "@pascopressurewashing",
+    "serviceArea": "Land O' Lakes, Wesley Chapel, Lutz, New Tampa, Dade City, San Antonio, and surrounding Pasco County communities",
+    "timestamp": "2026-08-25T22:22:20.850Z",
+    "badges": {
+      "connertonResident": false,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": false
+    },
+    "featured": false,
+    "approved": true
   }
 ]
