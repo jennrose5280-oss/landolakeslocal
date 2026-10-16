@@ -1688,5 +1688,109 @@
     },
     "featured": false,
     "approved": true
+  },
+  {
+    "businessName": "The Noble Floors Wholesale Tile Vinyl Plank Laminate Hardwood Mosaics Stones Pavers",
+    "category": "Home Improvement (Remodeling, Flooring, Cabinetry, Fencing, Patios, Windows, Etc)",
+    "description": "The Noble Floors is a wholesale flooring showroom in Tampa, Florida, open to homeowners, contractors and designers. Shop tile, luxury vinyl plank, laminate, hardwood, mosaics, natural stone and pavers for home and commercial projects throughout Tampa Bay.",
+    "ownerName": "Adriano Noble",
+    "address": "",
+    "phone": "813-504-9848",
+    "email": "admin@thenoblefloors.com",
+    "website": "https://thenoblefloors.com/",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "@thenoblefloors",
+    "serviceArea": "Tampa Bay, Florida, including Tampa and surrounding communities.",
+    "timestamp": "2026-10-09T00:45:44.979Z",
+    "badges": {
+      "connertonResident": false,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": false
+    },
+    "featured": false,
+    "approved": true
+  },
+  {
+    "businessName": "ClearViews Media",
+    "category": "Professional Services (Insurance Agents, Financial Planners, Attorneys, Tax Professionals, Etc)",
+    "description": "ClearViews Media offers professional real estate and headshot photography, photo editing, and other digital media services tailored to individuals and businesses.",
+    "ownerName": "Alexandra Giamanco",
+    "address": "",
+    "phone": "8135863123",
+    "email": "clearviewsbyag@gmail.com",
+    "website": "https://clearviewsmedia.com",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "",
+    "serviceArea": "Land O Lakes, Lutz, Odessa, Trinity",
+    "timestamp": "2026-10-13T13:52:03.157Z",
+    "badges": {
+      "connertonResident": false,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": false
+    },
+    "featured": false,
+    "approved": true
+  },
+  {
+    "businessName": "Freedom Asphalt Copy",
+    "category": "Home Services & Trades (Ie: HVAC, Plumbing, Handyman, Electrician, Etc.)",
+    "description": "Freedom Asphalt specializes in asphalt driveways, parking lot paving, and sealcoating in Florida. We focus on quality workmanship, durable results, and free estimates with no hidden fees.",
+    "ownerName": "Ali Akbar",
+    "address": "",
+    "phone": "+1 689-288-8515",
+    "email": "freedomasphaltflorida@gmail.com",
+    "website": "https://www.freedomasphaltfl.com/",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "",
+    "serviceArea": "",
+    "timestamp": "2026-10-15T10:17:02.214Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": true
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": false
+    },
+    "featured": false,
+    "approved": true
+  },
+  {
+    "businessName": "Swift Billing Solutions",
+    "category": "Other/ Not Listed (Please Provide Details In Next Question)",
+    "description": "Swift Billing Solutions provides the medical billing and revenue cycle management services to the physicians, private clinics and big organizations in every state in the USA.",
+    "ownerName": "Habib Khan",
+    "address": "",
+    "phone": "5126783078",
+    "email": "Marketing@swiftbillingsolutions.com",
+    "website": "https://swiftbillingsolutions.com/",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "https://www.instagram.com/swiftbilling/",
+    "serviceArea": "All US States",
+    "timestamp": "2026-10-15T15:00:21.073Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": false
+    },
+    "featured": false,
+    "approved": true
   }
 ]
