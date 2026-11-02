@@ -1792,5 +1792,57 @@
     },
     "featured": false,
     "approved": true
+  },
+  {
+    "businessName": "Pacific Curbing",
+    "category": "Outdoor Services (Ie: Landscaping, Pool Builder/ Maintenance, Tree Service, Etc)",
+    "description": "Pacific Curbing is greatest company in decorative concrete curbing, landscaping concrete edging . We supply decorative concrete curbing for Tampa Bay Areas.",
+    "ownerName": "Miryana long",
+    "address": "",
+    "phone": "8137704424",
+    "email": "info@pacific-curbing.com",
+    "website": "https://www.pacificcurbinginc.com",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "https://www.instagram.com/pacificcurbing?mdxt=YzJpOTFuaGdsbXF5&utm_source=qr",
+    "serviceArea": "Pasco",
+    "timestamp": "2026-10-23T07:31:49.498Z",
+    "badges": {
+      "connertonResident": true,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": true
+    },
+    "featured": false,
+    "approved": true
+  },
+  {
+    "businessName": "Bay Way Flooring LLC",
+    "category": "Home Improvement (Remodeling, Flooring, Cabinetry, Fencing, Patios, Windows, Etc)",
+    "description": "Bay Way Flooring LLC is a licensed and insured flooring and tile contractor serving Land O’ Lakes, Pasco County, Tampa, and the surrounding Tampa Bay area. We specialize in tile installation, shower tile and waterproofing, floor leveling and preparation, LVP, laminate, hardwood flooring, backsplashes, tile removal, and flooring repairs.",
+    "ownerName": "Daniel Ilinykh",
+    "address": "",
+    "phone": "727-272-5210",
+    "email": "baywayflooring@gmail.com",
+    "website": "https://baywayflooring.com/",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "bay.way.flooring",
+    "serviceArea": "Land O’ Lakes, Wesley Chapel, Odessa, Tampa, and surrounding Tampa Bay communities.",
+    "timestamp": "2026-10-28T18:03:44.115Z",
+    "badges": {
+      "connertonResident": false,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": false
+    },
+    "featured": false,
+    "approved": true
   }
 ]
