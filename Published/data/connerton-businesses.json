@@ -1844,5 +1844,31 @@
     },
     "featured": false,
     "approved": true
+  },
+  {
+    "businessName": "CoaterZ Lutz",
+    "category": "Other/ Not Listed (Please Provide Details In Next Question)",
+    "description": "Full and partial color-change vinyl wraps, chrome delete and business vehicle graphics, plus PPF, ceramic coating and window tint — done in-house in Lutz for drivers from Land O' Lakes, Wesley Chapel, Connerton and New Tampa.",
+    "ownerName": "Corey Eberhardt",
+    "address": "",
+    "phone": "(813) 467-8149",
+    "email": "listings@coaterz.com",
+    "website": "https://coaterz.com/lutz/wraps/",
+    "facebook": "",
+    "logoUrl": "",
+    "instagram": "@coaterzllc",
+    "serviceArea": "Lutz, Land O' Lakes, Wesley Chapel, Connerton, New Tampa and nearby Hillsborough/Pasco",
+    "timestamp": "2026-11-07T00:44:53.399Z",
+    "badges": {
+      "connertonResident": false,
+      "heroOwned": false
+    },
+    "discounts": {
+      "militaryVeteran": false,
+      "firstResponder": false,
+      "connertonResident": false
+    },
+    "featured": false,
+    "approved": true
   }
 ]
