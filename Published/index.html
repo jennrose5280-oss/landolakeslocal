@@ -165,7 +165,8 @@
     .photo-stack { flex-direction: row; }
     .photo-main { height: 260px; }
     .photo-sm { height: 125px; }
-    nav ul { display: none; }
+    .nav-links li:not(:last-child) { display: none; }
+    .nav-logo { font-size: 15px; }
     .stats-bar-inner { flex-wrap: wrap; }
     .stat { border-right: none; border-bottom: 1px solid var(--gray-200); flex: 0 0 50%; }
   }
@@ -177,6 +178,7 @@
 <nav>
   <a href="/" class="nav-logo">Land O' <span>Lakes</span> Local</a>
   <ul class="nav-links">
+    <li><a href="/directory/">Directory</a></li>
     <li><a href="/connerton/">Connerton</a></li>
     <li><a href="/schools/">Schools</a></li>
     <li><a href="#neighborhoods">Neighborhoods</a></li>
@@ -190,9 +192,9 @@
   <div class="hero-inner">
     <div class="hero-eyebrow">Land O' Lakes, Florida</div>
     <h1 class="hero-title">Your neighbors.<br><em>Your businesses.</em></h1>
-    <p class="hero-sub">A free community directory for Land O' Lakes — where locals support locals, and your neighbor's business is just one click away.</p>
+    <p class="hero-sub">A free community directory for Land O' Lakes and surrounding areas — where locals support locals, and your neighbor's business is just one click away.</p>
     <div class="hero-actions">
-      <a href="/connerton/" class="btn-primary">Browse Connerton Directory →</a>
+      <a href="/directory/" class="btn-primary">Browse the Directory →</a>
       <a href="/schools/" class="btn-ghost">School Info</a>
     </div>
   </div>
@@ -228,7 +230,7 @@
 <div class="stats-bar">
   <div class="stats-bar-inner">
     <div class="stat">
-      <div class="stat-num">40<span>+</span></div>
+      <div class="stat-num">70<span>+</span></div>
       <div class="stat-label">Local businesses<br>in the directory</div>
     </div>
     <div class="stat">
@@ -236,8 +238,8 @@
       <div class="stat-label">Categories from<br>home services to food</div>
     </div>
     <div class="stat">
-      <div class="stat-num">1</div>
-      <div class="stat-label">Neighborhood live<br>now, more coming</div>
+      <div class="stat-num">2</div>
+      <div class="stat-label">Directories: Land O' Lakes<br>&amp; Connerton neighbors</div>
     </div>
     <div class="stat">
       <div class="stat-num" style="color:var(--pink);">Free</div>
@@ -251,47 +253,30 @@
   <div class="neighborhoods-inner">
     <div class="section-label">Community directories</div>
     <h2 class="section-title">Find businesses near you</h2>
-    <p class="section-sub">Starting in Connerton and growing across Land O' Lakes. Each directory is put together by people who live here, for people who live here.</p>
+    <p class="section-sub">Two free directories, put together by people who live here, for people who live here.</p>
     <div class="areas-grid">
+      <a href="/directory/" class="area-card">
+        <div class="area-card-img">
+          <img src="77-web-or-mls-DJI_0746.jpg" alt="Aerial view of Land O' Lakes">
+          <span class="area-card-badge badge-live">Live Now</span>
+        </div>
+        <div class="area-card-body">
+          <div class="area-card-name">Land O' Lakes &amp; Surrounding Areas</div>
+          <div class="area-card-desc">Local businesses serving Land O' Lakes, Lutz, Odessa, Wesley Chapel and nearby Pasco communities — home services, food, pet care, health, and more.</div>
+          <div class="area-card-meta">Browse the directory →</div>
+        </div>
+      </a>
       <a href="/connerton/" class="area-card">
         <div class="area-card-img">
           <img src="46-RLD_7952.jpg" alt="Connerton entrance">
           <span class="area-card-badge badge-live">Live Now</span>
         </div>
         <div class="area-card-body">
-          <div class="area-card-name">Connerton</div>
-          <div class="area-card-desc">40+ businesses across 11 categories — home services, food, pet care, health, and more.</div>
-          <div class="area-card-meta">Browse the directory →</div>
+          <div class="area-card-name">Connerton Neighbors</div>
+          <div class="area-card-desc">A smaller directory of businesses owned by Connerton residents — shop your neighbors first.</div>
+          <div class="area-card-meta">Browse Connerton businesses →</div>
         </div>
       </a>
-      <div class="area-card" style="cursor:default;">
-        <div class="area-card-img-placeholder">
-          <div style="text-align:center; color:var(--gray-400);">
-            <div style="font-size:28px; margin-bottom:6px; opacity:0.4;">🌴</div>
-            <div style="font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;">Photo coming</div>
-          </div>
-          <span class="area-card-badge badge-soon">Coming Soon</span>
-        </div>
-        <div class="area-card-body">
-          <div class="area-card-name">Land O' Lakes</div>
-          <div class="area-card-desc">A broader directory for businesses serving the wider Land O' Lakes community.</div>
-          <div class="area-card-meta muted">Launching soon</div>
-        </div>
-      </div>
-      <div class="area-card" style="cursor:default;">
-        <div class="area-card-img-placeholder">
-          <div style="text-align:center; color:var(--gray-400);">
-            <div style="font-size:28px; margin-bottom:6px; opacity:0.4;">🌿</div>
-            <div style="font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;">Photo coming</div>
-          </div>
-          <span class="area-card-badge badge-soon">Coming Soon</span>
-        </div>
-        <div class="area-card-body">
-          <div class="area-card-name">Lutz &amp; Wesley Chapel</div>
-          <div class="area-card-desc">Expanding into neighboring communities as this project grows. Know a great local business? Tell us.</div>
-          <div class="area-card-meta muted">Launching soon</div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
