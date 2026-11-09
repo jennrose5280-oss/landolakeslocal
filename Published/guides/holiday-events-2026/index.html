@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2026 Holiday Events in Pasco County &amp; Tampa Bay | Land O' Lakes Local</title>
-<meta name="description" content="Christmas parades, lighted boat parades, light shows, and farm Christmas events near Land O' Lakes, Pasco County, and Tampa Bay for the 2026 holiday season — curated by a Connerton neighbor.">
+<meta name="description" content="Christmas parades, lighted boat parades, light shows, and farm Christmas events near Land O' Lakes, Pasco County, and Tampa Bay for the 2026 holiday season — curated by a Land O' Lakes neighbor.">
 <link rel="canonical" href="https://landolakeslocal.com/guides/holiday-events-2026/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2026 Holiday Events in Pasco County &amp; Tampa Bay">
@@ -170,6 +170,20 @@
   .event a.more { font-size: 13px; font-weight: 700; color: var(--cranberry); text-decoration: none; }
   .event a.more:hover { text-decoration: underline; }
 
+
+  /* String-light garland */
+  .garland { height: 44px; background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='44' viewBox='0 0 160 44'><path d='M0 6 Q20 20 40 6 T80 6 T120 6 T160 6' fill='none' stroke='%232b2b2b' stroke-width='1.6'/><g><rect x='17' y='12' width='6' height='5' rx='1' fill='%23555'/><ellipse cx='20' cy='24' rx='6' ry='9' fill='%239b1b30'/></g><g><rect x='57' y='12' width='6' height='5' rx='1' fill='%23555'/><ellipse cx='60' cy='24' rx='6' ry='9' fill='%23d4a94f'/></g><g><rect x='97' y='12' width='6' height='5' rx='1' fill='%23555'/><ellipse cx='100' cy='24' rx='6' ry='9' fill='%232f5d46'/></g><g><rect x='137' y='12' width='6' height='5' rx='1' fill='%23555'/><ellipse cx='140' cy='24' rx='6' ry='9' fill='%23f2b6c1'/></g></svg>") repeat-x center top; }
+  .garland.glow { filter: drop-shadow(0 0 6px rgba(255,214,120,.55)); }
+  @keyframes twinkle { 0%,100% { opacity: 1 } 50% { opacity: .78 } }
+  .garland.glow { animation: twinkle 2.6s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce) { .garland.glow { animation: none; } }
+  /* Optional photo on an event card: add <img class="event-photo" src=".." alt=".."> as the card's first child */
+  .event .event-photo { grid-column: 1 / -1; width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; margin: -16px -16px 4px; width: calc(100% + 32px); }
+  /* Photo band */
+  .photo-band { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 8px; margin-top: 28px; }
+  .photo-band img { width: 100%; height: 220px; object-fit: cover; display: block; }
+  @media (max-width: 760px) { .photo-band { grid-template-columns: 1fr 1fr; } .photo-band img:first-child { grid-column: 1 / -1; } .photo-band img { height: 150px; } }
+
   /* SHOP SMALL (GWG "shop local" tiles) */
   .shop-head { background: var(--cream-deep); text-align: center; padding: 18px; margin-bottom: 18px; }
   .shop-head .script { font-size: 54px; line-height: 1; }
@@ -254,9 +268,10 @@
     <div class="hero-script script">Holiday</div>
     <h1 class="hero-title">Events in Pasco County &amp; Tampa Bay</h1>
     <p class="hero-sub">Parades, lighted boats, light shows and Christmas on the farm — everything worth putting on the family calendar this season, from right here in Land O' Lakes to downtown Tampa.</p>
-    <div class="hero-byline"><span class="script">Jenn Rose</span> Your Connerton neighbor</div>
+    <div class="hero-byline"><span class="script">Jenn Rose</span> Your Land O' Lakes neighbor</div>
   </div>
 </header>
+<div class="garland glow" aria-hidden="true"></div>
 
 <main class="wrap">
 
@@ -275,6 +290,7 @@
   </div>
 
 
+  <div class="garland" aria-hidden="true" style="margin-top:36px;"></div>
   <!-- LOCAL HAPPENINGS (confirmed 2026 dates only, in date order) -->
   <section class="block" id="happenings">
     <div class="bar"><span class="script">Local</span><h2>Happenings</h2></div>
@@ -382,6 +398,14 @@
     </div>
   </section>
 
+  <!-- PHOTO BAND: drop real local holiday photos into /guides/holiday-events-2026/img/ and uncomment
+  <div class="photo-band">
+    <img src="img/photo-1.jpg" alt="">
+    <img src="img/photo-2.jpg" alt="">
+    <img src="img/photo-3.jpg" alt="">
+  </div>
+  -->
+
   <!-- LIGHTS MAP CTA -->
   <section class="block" id="lights-map">
     <div class="cta">
@@ -398,7 +422,7 @@
     <div>
       <div class="script">About</div>
       <div class="name">Jennifer Rose</div>
-      <p>I'm a Connerton resident and a Realtor with Real Broker, LLC, licensed in Florida and Colorado. I put together Land O' Lakes Local because helping people feel at home here is about more than real estate — it's knowing where the parade is and which neighbor makes the best cookies.</p>
+      <p>I'm a Land O' Lakes resident and a Realtor with Real Broker, LLC, licensed in Florida and Colorado. I put together Land O' Lakes Local because helping people feel at home here is about more than real estate — it's knowing where the parade is and which neighbor makes the best cookies.</p>
       <div class="connect">
         <a href="https://jennrosehomes.com" target="_blank" rel="noopener">jennrosehomes.com</a>
         <a href="tel:7208384513">720-838-4513</a>
