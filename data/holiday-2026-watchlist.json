@@ -18,55 +18,64 @@
    "name": "Christmas Town at Hope City Church",
    "officialLink": null,
    "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>Christmas Town at Hope City Church</h3>\n          <div class=\"meta\">Land O' Lakes &middot; 5513 School Rd</div>\n          <p class=\"desc\">A family Christmas event put on by a local church \u2014 held Dec. 19 last season. Date for 2026 coming soon.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Land O' Lakes</span><span class=\"pill tba\">2026 date TBA</span></div>\n        </div>\n      </article>\n"
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>Christmas Town at Hope City Church</h3>\n          <div class=\"meta\">Land O' Lakes &middot; 5513 School Rd</div>\n          <p class=\"desc\">A family Christmas event put on by a local church \u2014 held Dec. 19 last season. Date for 2026 coming soon.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Land O' Lakes</span><span class=\"pill tba\">2026 date TBA</span></div>\n        </div>\n      </article>\n",
+   "note": "2026-11-09: not on the church events page for 2026."
   },
   {
    "name": "Celebration of Lights at The Concourse",
-   "officialLink": "https://celebrationoflightsfl.com",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Season</div></div>\n        <div>\n          <h3>Celebration of Lights at The Concourse</h3>\n          <div class=\"meta\">Shady Hills (west Pasco) &middot; 11919 Alric Pottberg Rd</div>\n          <p class=\"desc\">A mile-long drive-through light trail, pictures with Santa, and holiday train rides with the Grand Concourse Railroad (train tickets sold separately). Ran Nov. 28\u2013Dec. 27 last season.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://celebrationoflightsfl.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "officialLink": "https://pascocelebrationoflights.com/",
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Season</div></div>\n        <div>\n          <h3>Celebration of Lights at The Concourse</h3>\n          <div class=\"meta\">Shady Hills (west Pasco) &middot; 11919 Alric Pottberg Rd</div>\n          <p class=\"desc\">A mile-long drive-through light trail, pictures with Santa, and holiday train rides with the Grand Concourse Railroad (train tickets sold separately). Ran Nov. 28\u2013Dec. 27 last season.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://celebrationoflightsfl.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "Tampa Bay Festival of Lights & Santa's Village",
    "officialLink": "https://www.hillsboroughcountyfair.com/",
    "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">From Thanks&shy;giving</div></div>\n        <div>\n          <h3>Tampa Bay Festival of Lights &amp; Santa's Village</h3>\n          <div class=\"meta\">Dover &middot; Hillsborough County Fairgrounds, 215 Sydney Washer Rd</div>\n          <p class=\"desc\">A roughly two-mile drive-through with more than a million lights, Florida-themed displays and an animated light tunnel, followed by a walk through Santa's Village. Usually opens Thanksgiving week and runs through late December.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://www.hillsboroughcountyfair.com/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">From Thanks&shy;giving</div></div>\n        <div>\n          <h3>Tampa Bay Festival of Lights &amp; Santa's Village</h3>\n          <div class=\"meta\">Dover &middot; Hillsborough County Fairgrounds, 215 Sydney Washer Rd</div>\n          <p class=\"desc\">A roughly two-mile drive-through with more than a million lights, Florida-themed displays and an animated light tunnel, followed by a walk through Santa's Village. Usually opens Thanksgiving week and runs through late December.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://www.hillsboroughcountyfair.com/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "note": "2026-11-09: Dreamland Amusements (carnival operator) lists Nov 26-Dec 27, 2026; fair site unreachable and no press yet. Needs fair site or 2 outlets."
   },
   {
    "name": "Light Up the Angelus",
-   "officialLink": "https://www.facebook.com/TheAngelusInc/",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Season</div></div>\n        <div>\n          <h3>Light Up the Angelus</h3>\n          <div class=\"meta\">Hudson (west Pasco)</div>\n          <p class=\"desc\">A holiday light display at The Angelus in Hudson \u2014 a good stop on a lights drive through west Pasco. Ran Nov. 29\u2013Dec. 22 last season.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://www.facebook.com/TheAngelusInc/\" target=\"_blank\" rel=\"noopener\">The Angelus on Facebook \u2192</a></div>\n        </div>\n      </article>\n"
+   "officialLink": "https://theangelus.com/news-events/",
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Season</div></div>\n        <div>\n          <h3>Light Up the Angelus</h3>\n          <div class=\"meta\">Hudson (west Pasco)</div>\n          <p class=\"desc\">A holiday light display at The Angelus in Hudson \u2014 a good stop on a lights drive through west Pasco. Ran Nov. 29\u2013Dec. 22 last season.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://www.facebook.com/TheAngelusInc/\" target=\"_blank\" rel=\"noopener\">The Angelus on Facebook \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "St. Pete Santa Parade & Tree Lighting",
    "officialLink": "https://stpeteparksrec.org/holidayevents",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV</div><div class=\"day soft\">Sat after Thanks&shy;giving</div></div>\n        <div>\n          <h3>St. Pete Santa Parade &amp; Tree Lighting</h3>\n          <div class=\"meta\">Downtown St. Petersburg &middot; 6:30 PM</div>\n          <p class=\"desc\">An illuminated night parade from Albert Whitted Park along Bayshore Dr., followed by the tree lighting in North Straub Park.</p>\n          <div class=\"row\"><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://stpeteparksrec.org/holidayevents\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV</div><div class=\"day soft\">Sat after Thanks&shy;giving</div></div>\n        <div>\n          <h3>St. Pete Santa Parade &amp; Tree Lighting</h3>\n          <div class=\"meta\">Downtown St. Petersburg &middot; 6:30 PM</div>\n          <p class=\"desc\">An illuminated night parade from Albert Whitted Park along Bayshore Dr., followed by the tree lighting in North Straub Park.</p>\n          <div class=\"row\"><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://stpeteparksrec.org/holidayevents\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "Dade City Christmas Parade",
    "officialLink": "https://pioneerfloridamuseum.org",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">1st Friday</div></div>\n        <div>\n          <h3>Dade City Christmas Parade</h3>\n          <div class=\"meta\">Downtown Dade City &middot; 7th St from MLK Blvd to Church Ave &middot; 7 PM</div>\n          <p class=\"desc\">A small-town night parade with a focus on kids, organized by the Pioneer Florida Museum. Held Friday, Dec. 5 last year.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://pioneerfloridamuseum.org\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">1st Friday</div></div>\n        <div>\n          <h3>Dade City Christmas Parade</h3>\n          <div class=\"meta\">Downtown Dade City &middot; 7th St from MLK Blvd to Church Ave &middot; 7 PM</div>\n          <p class=\"desc\">A small-town night parade with a focus on kids, organized by the Pioneer Florida Museum. Held Friday, Dec. 5 last year.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://pioneerfloridamuseum.org\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "Zephyrhills Festival of Lights & Christmas Parade",
    "officialLink": "https://www.mainstreetzephyrhillsevents.org",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early Dec</div></div>\n        <div>\n          <h3>Zephyrhills Festival of Lights &amp; Christmas Parade</h3>\n          <div class=\"meta\">Downtown Zephyrhills &middot; 5th Ave</div>\n          <p class=\"desc\">An evening festival and lighted float parade from Main Street Zephyrhills. Held on Saturday, Dec. 6 last year.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.mainstreetzephyrhillsevents.org\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early Dec</div></div>\n        <div>\n          <h3>Zephyrhills Festival of Lights &amp; Christmas Parade</h3>\n          <div class=\"meta\">Downtown Zephyrhills &middot; 5th Ave</div>\n          <p class=\"desc\">An evening festival and lighted float parade from Main Street Zephyrhills. Held on Saturday, Dec. 6 last year.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.mainstreetzephyrhillsevents.org\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "Safety Harbor Holiday Parade",
    "officialLink": "https://www.cityofsafetyharbor.com",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early Dec</div></div>\n        <div>\n          <h3>Safety Harbor Holiday Parade</h3>\n          <div class=\"meta\">Main Street, Safety Harbor &middot; 10 AM</div>\n          <p class=\"desc\">A morning parade of floats, community groups and classic cars. Held Saturday, Dec. 6 last year.</p>\n          <div class=\"row\"><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.cityofsafetyharbor.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early Dec</div></div>\n        <div>\n          <h3>Safety Harbor Holiday Parade</h3>\n          <div class=\"meta\">Main Street, Safety Harbor &middot; 10 AM</div>\n          <p class=\"desc\">A morning parade of floats, community groups and classic cars. Held Saturday, Dec. 6 last year.</p>\n          <div class=\"row\"><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.cityofsafetyharbor.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "Tarpon Springs Christmas Parade",
    "officialLink": "https://spongedocks.net",
    "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early\u2013mid Dec</div></div>\n        <div>\n          <h3>Tarpon Springs Christmas Parade</h3>\n          <div class=\"meta\">Downtown Tarpon Springs</div>\n          <p class=\"desc\">A Saturday-morning community parade with dozens of local organizations.</p>\n          <div class=\"row\"><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://spongedocks.net\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early\u2013mid Dec</div></div>\n        <div>\n          <h3>Tarpon Springs Christmas Parade</h3>\n          <div class=\"meta\">Downtown Tarpon Springs</div>\n          <p class=\"desc\">A Saturday-morning community parade with dozens of local organizations.</p>\n          <div class=\"row\"><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://spongedocks.net\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "note": "2026-11-09: exploretarponsprings.com shows Dec 12, 2026 with placeholder times (\"Details to follow\"); not yet confirmed."
   },
   {
    "name": "New Port Richey Holiday Street Parade",
@@ -77,68 +86,79 @@
   {
    "name": "Dunedin Holiday Parade & Old Fashioned Christmas",
    "officialLink": "https://www.dunedin.gov",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>Dunedin Holiday Parade &amp; Old Fashioned Christmas</h3>\n          <div class=\"meta\">Downtown Dunedin &middot; Douglas Ave</div>\n          <p class=\"desc\">An afternoon parade followed by an old-fashioned Christmas downtown \u2014 carolers, carriage rides and even \"snow.\" Held Saturday, Dec. 13 last year.</p>\n          <div class=\"row\"><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.dunedin.gov\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>Dunedin Holiday Parade &amp; Old Fashioned Christmas</h3>\n          <div class=\"meta\">Downtown Dunedin &middot; Douglas Ave</div>\n          <p class=\"desc\">An afternoon parade followed by an old-fashioned Christmas downtown \u2014 carolers, carriage rides and even \"snow.\" Held Saturday, Dec. 13 last year.</p>\n          <div class=\"row\"><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.dunedin.gov\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "Pinellas Park Christmas Parade",
    "officialLink": "http://www.celebratepinellaspark.com/",
    "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>Pinellas Park Christmas Parade</h3>\n          <div class=\"meta\">Park Blvd, Pinellas Park &middot; 6 PM</div>\n          <p class=\"desc\">A long-running evening parade down Park Boulevard. Held Saturday, Dec. 13 last year.</p>\n          <div class=\"row\"><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"http://www.celebratepinellaspark.com/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>Pinellas Park Christmas Parade</h3>\n          <div class=\"meta\">Park Blvd, Pinellas Park &middot; 6 PM</div>\n          <p class=\"desc\">A long-running evening parade down Park Boulevard. Held Saturday, Dec. 13 last year.</p>\n          <div class=\"row\"><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"http://www.celebratepinellaspark.com/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "note": "2026-11-09: City of Pinellas Park calendar lists Sat Dec 12, 2026, 6-10 PM; organizer site not reachable, no press yet (one source)."
   },
   {
    "name": "Cotee River Christmas Boat Parade",
    "officialLink": "https://www.visitnpr.com",
    "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early Dec</div></div>\n        <div>\n          <h3>Cotee River Christmas Boat Parade</h3>\n          <div class=\"meta\">New Port Richey &middot; Miller's Bayou to Sims Park</div>\n          <p class=\"desc\">Decorated boats cruise the Pithlachascotee River into downtown New Port Richey. Watch from Sims Park.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.visitnpr.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early Dec</div></div>\n        <div>\n          <h3>Cotee River Christmas Boat Parade</h3>\n          <div class=\"meta\">New Port Richey &middot; Miller's Bayou to Sims Park</div>\n          <p class=\"desc\">Decorated boats cruise the Pithlachascotee River into downtown New Port Richey. Watch from Sims Park.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.visitnpr.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "note": "2026-11-09: only an aggregator lists Sat Dec 5, 2026; organizer not yet confirmed."
   },
   {
    "name": "Alafia Lighted Boat Parade",
    "officialLink": "https://www.alafiaboatparade.com",
    "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early Dec</div></div>\n        <div>\n          <h3>Alafia Lighted Boat Parade</h3>\n          <div class=\"meta\">Riverview &middot; Riverview Park &amp; Civic Center</div>\n          <p class=\"desc\">A community boat parade on the Alafia River. Held Saturday, Dec. 6 last year.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.alafiaboatparade.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early Dec</div></div>\n        <div>\n          <h3>Alafia Lighted Boat Parade</h3>\n          <div class=\"meta\">Riverview &middot; Riverview Park &amp; Civic Center</div>\n          <p class=\"desc\">A community boat parade on the Alafia River. Held Saturday, Dec. 6 last year.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.alafiaboatparade.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "note": "2026-11-09: Osprey Observer (Oct 2, 2026) says Sat Dec 5, 2026, 42nd annual; only one source so far."
   },
   {
    "name": "Tarpon Springs Illuminated Holiday Boat Parade",
    "officialLink": "https://spongedocks.net",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec Fri</div></div>\n        <div>\n          <h3>Tarpon Springs Illuminated Holiday Boat Parade</h3>\n          <div class=\"meta\">Tarpon Springs &middot; Craig Park, Spring Bayou &amp; the Sponge Docks &middot; 7 PM</div>\n          <p class=\"desc\">Lighted boats through the bayous \u2014 make a night of it with dinner at the Sponge Docks. Held Friday, Dec. 12 last year.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://spongedocks.net\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec Fri</div></div>\n        <div>\n          <h3>Tarpon Springs Illuminated Holiday Boat Parade</h3>\n          <div class=\"meta\">Tarpon Springs &middot; Craig Park, Spring Bayou &amp; the Sponge Docks &middot; 7 PM</div>\n          <p class=\"desc\">Lighted boats through the bayous \u2014 make a night of it with dinner at the Sponge Docks. Held Friday, Dec. 12 last year.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://spongedocks.net\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "Clearwater Yacht Club Holiday Boat Parade",
    "officialLink": "https://clearwateryachtclub.org/boat-parade/",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>Clearwater Yacht Club Holiday Boat Parade</h3>\n          <div class=\"meta\">Clearwater &middot; 6:30 PM</div>\n          <p class=\"desc\">Viewable from waterfront restaurants and hotels along the route. Held Saturday, Dec. 13 last year.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://clearwateryachtclub.org/boat-parade/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>Clearwater Yacht Club Holiday Boat Parade</h3>\n          <div class=\"meta\">Clearwater &middot; 6:30 PM</div>\n          <p class=\"desc\">Viewable from waterfront restaurants and hotels along the route. Held Saturday, Dec. 13 last year.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://clearwateryachtclub.org/boat-parade/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "Madeira Beach Festival of Lights Boat Parade",
    "officialLink": "https://madeirabeachfl.gov/festival-of-lights-holiday-boat-parade/",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>Madeira Beach Festival of Lights Boat Parade</h3>\n          <div class=\"meta\">Madeira Beach &middot; best viewing at ROC Park</div>\n          <p class=\"desc\">Boats wind through the city's canals and finish near John's Pass.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://madeirabeachfl.gov/festival-of-lights-holiday-boat-parade/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>Madeira Beach Festival of Lights Boat Parade</h3>\n          <div class=\"meta\">Madeira Beach &middot; best viewing at ROC Park</div>\n          <p class=\"desc\">Boats wind through the city's canals and finish near John's Pass.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://madeirabeachfl.gov/festival-of-lights-holiday-boat-parade/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "Raprager Family Farms Country Christmas",
-   "officialLink": null,
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Fri\u2013Sun</div></div>\n        <div>\n          <h3>Raprager Family Farms Country Christmas</h3>\n          <div class=\"meta\">Odessa &middot; 16907 Boy Scout Rd</div>\n          <p class=\"desc\">Closest farm Christmas to Land O' Lakes \u2014 lights, decorations and family activities on weekends. Ran Fridays\u2013Sundays, Nov. 28\u2013Dec. 21 last season.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 dates TBA</span></div>\n        </div>\n      </article>\n"
+   "officialLink": "https://rapragerfarm.com/christmas",
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Fri\u2013Sun</div></div>\n        <div>\n          <h3>Raprager Family Farms Country Christmas</h3>\n          <div class=\"meta\">Odessa &middot; 16907 Boy Scout Rd</div>\n          <p class=\"desc\">Closest farm Christmas to Land O' Lakes \u2014 lights, decorations and family activities on weekends. Ran Fridays\u2013Sundays, Nov. 28\u2013Dec. 21 last season.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 dates TBA</span></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "Ergle Christmas Tree Farm",
    "officialLink": "http://www.ergletrees.com/",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Season</div></div>\n        <div>\n          <h3>Ergle Christmas Tree Farm</h3>\n          <div class=\"meta\">Dade City &middot; 3325 Treiman Blvd</div>\n          <p class=\"desc\">Cut your own Florida Christmas tree (or pick a classic one trucked down from up north). A family tradition in Dade City for decades.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><a class=\"more\" href=\"http://www.ergletrees.com/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Season</div></div>\n        <div>\n          <h3>Ergle Christmas Tree Farm</h3>\n          <div class=\"meta\">Dade City &middot; 3325 Treiman Blvd</div>\n          <p class=\"desc\">Cut your own Florida Christmas tree (or pick a classic one trucked down from up north). A family tradition in Dade City for decades.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><a class=\"more\" href=\"http://www.ergletrees.com/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   },
   {
    "name": "Christmas Evening Market at Dade City Farms",
    "officialLink": "https://dadecityfarms.com",
    "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Wknds</div></div>\n        <div>\n          <h3>Christmas Evening Market at Dade City Farms</h3>\n          <div class=\"meta\">Dade City &middot; Lake Iola Rd</div>\n          <p class=\"desc\">Holiday vendors, a light stroll, hayrides and Santa photos on select December weekend evenings.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://dadecityfarms.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Wknds</div></div>\n        <div>\n          <h3>Christmas Evening Market at Dade City Farms</h3>\n          <div class=\"meta\">Dade City &middot; Lake Iola Rd</div>\n          <p class=\"desc\">Holiday vendors, a light stroll, hayrides and Santa photos on select December weekend evenings.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://dadecityfarms.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "note": "2026-11-09: not listed for 2026 under this name. Farm site shows a \"Country Christmas Carnival\" with \"Merry Market\" Nov 27, 28 & Dec 5 (https://dadecityfarms.com/seasonal-events/)."
   },
   {
    "name": "Country Christmas at HarvestMoon Fun Farm",
    "officialLink": "https://www.harvestmoonfunfarm.com/countrychristmas",
-   "status": "unconfirmed",
-   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Select nights</div></div>\n        <div>\n          <h3>Country Christmas at HarvestMoon Fun Farm</h3>\n          <div class=\"meta\">Masaryktown &middot; 15990 Stur St</div>\n          <p class=\"desc\">Christmas lights, an enchanted hayride with carols, Santa visits and the petting farm, on select nights.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://www.harvestmoonfunfarm.com/countrychristmas\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
+   "status": "published",
+   "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Select nights</div></div>\n        <div>\n          <h3>Country Christmas at HarvestMoon Fun Farm</h3>\n          <div class=\"meta\">Masaryktown &middot; 15990 Stur St</div>\n          <p class=\"desc\">Christmas lights, an enchanted hayride with carols, Santa visits and the petting farm, on select nights.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://www.harvestmoonfunfarm.com/countrychristmas\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
+   "publishedOn": "2026-11-09"
   }
  ],
  "popUpsToWatch": [
@@ -146,34 +166,44 @@
    "name": "Rreal Tacos Christmas Pop-Up (Tampa, 808 N Franklin St)",
    "status": "on page, dates TBA",
    "where": "Instagram @rrealtacos",
-   "note": "Jenn's request. Atlanta locations run a Christmas pop-up through Dec 31; Tampa opened Oct 13, 2026."
+   "note": "Jenn's request. Atlanta locations run a Christmas pop-up through Dec 31; Tampa opened Oct 13, 2026. 2026-11-09: rrealtacos.com shows a chain-wide \"Christmas Bar Coming Soon\" banner, no Tampa dates yet.",
+   "lastChecked": "2026-11-09"
   },
   {
    "name": "Miracle at Strandhill Public (Tampa)",
    "status": "on page, confirmed returning, dates TBA",
-   "where": "https://www.miraclepopup.com/locations-2026"
+   "where": "https://www.miraclepopup.com/locations-2026",
+   "lastChecked": "2026-11-09",
+   "note": "2026-11-09: listed on miraclepopup.com/locations-2026, no dates/hours yet."
   },
   {
    "name": "Miracle at Bar Mezzo (St. Pete)",
    "status": "on page, confirmed returning, dates TBA",
-   "where": "https://www.miraclepopup.com/locations-2026"
+   "where": "https://www.miraclepopup.com/locations-2026",
+   "lastChecked": "2026-11-09",
+   "note": "2026-11-09: listed on miraclepopup.com/locations-2026, no dates/hours yet."
   },
   {
    "name": "Sippin' Santa (Dunedin, The Honu, in past years)",
    "status": "not on page",
-   "where": "https://sippinsantapopup.com"
+   "where": "https://sippinsantapopup.com",
+   "lastChecked": "2026-11-09",
+   "note": "2026-11-09: 2026 locations list only Boynton Beach & New Smyrna Beach in FL; no Tampa Bay spot."
   },
   {
    "name": "Santa's Social Club at Sonder Social Club (Dunedin)",
-   "status": "not on page"
+   "status": "not on page",
+   "lastChecked": "2026-11-09"
   },
   {
    "name": "Blitz Inn at Barterhouse Ybor",
-   "status": "not on page"
+   "status": "not on page",
+   "lastChecked": "2026-11-09"
   },
   {
    "name": "XMAS Bar St. Pete",
-   "status": "not on page"
+   "status": "not on page",
+   "lastChecked": "2026-11-09"
   }
  ]
 }
