@@ -140,5 +140,40 @@
    "status": "unconfirmed",
    "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Select nights</div></div>\n        <div>\n          <h3>Country Christmas at HarvestMoon Fun Farm</h3>\n          <div class=\"meta\">Masaryktown &middot; 15990 Stur St</div>\n          <p class=\"desc\">Christmas lights, an enchanted hayride with carols, Santa visits and the petting farm, on select nights.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://www.harvestmoonfunfarm.com/countrychristmas\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
   }
+ ],
+ "popUpsToWatch": [
+  {
+   "name": "Rreal Tacos Christmas Pop-Up (Tampa, 808 N Franklin St)",
+   "status": "on page, dates TBA",
+   "where": "Instagram @rrealtacos",
+   "note": "Jenn's request. Atlanta locations run a Christmas pop-up through Dec 31; Tampa opened Oct 13, 2026."
+  },
+  {
+   "name": "Miracle at Strandhill Public (Tampa)",
+   "status": "on page, confirmed returning, dates TBA",
+   "where": "https://www.miraclepopup.com/locations-2026"
+  },
+  {
+   "name": "Miracle at Bar Mezzo (St. Pete)",
+   "status": "on page, confirmed returning, dates TBA",
+   "where": "https://www.miraclepopup.com/locations-2026"
+  },
+  {
+   "name": "Sippin' Santa (Dunedin, The Honu, in past years)",
+   "status": "not on page",
+   "where": "https://sippinsantapopup.com"
+  },
+  {
+   "name": "Santa's Social Club at Sonder Social Club (Dunedin)",
+   "status": "not on page"
+  },
+  {
+   "name": "Blitz Inn at Barterhouse Ybor",
+   "status": "not on page"
+  },
+  {
+   "name": "XMAS Bar St. Pete",
+   "status": "not on page"
+  }
  ]
 }
