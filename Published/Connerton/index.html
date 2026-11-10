@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Connerton Community Business Directory | Land O' Lakes Local</title>
+<title>Connerton Resident-Owned Business Directory | Land O' Lakes Local</title>
 <meta name="description" content="Discover trusted local businesses in Connerton, Land O' Lakes, FL. Curated by Jennifer Rose, Real Broker — your Connerton neighbor and local real estate expert." />
 <meta property="og:title" content="Connerton Community Business Directory" />
 <meta property="og:description" content="Discover trusted local businesses run by your Connerton neighbors. Free to list. Curated by Jennifer Rose, Realtor." />
@@ -543,8 +543,8 @@ img { display: block; max-width: 100%; }
 <!-- HERO -->
 <header class="page-hero">
   <p class="hero-eyebrow">Connerton · Land O' Lakes, FL</p>
-  <h1 class="hero-title">Connerton Community<br>Business Directory</h1>
-  <p class="hero-sub">Discover trusted local businesses run by your neighbors.</p>
+  <h1 class="hero-title">Connerton Neighbors<br>Business Directory</h1>
+  <p class="hero-sub">Businesses owned by Connerton residents — shop your neighbors first. <a href="/directory/" style="color:inherit;text-decoration:underline;">Browse the full Land O' Lakes directory →</a></p>
   <div id="heroCount" class="hero-count-badge">Loading directory…</div>
   <div class="hero-btns">
     <a class="btn-hero-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScsg9FvGL0fQ-K0jqoS-CH6gV-xm80uLFZLrh-3hs0YTYDM3g/viewform?usp=header" target="_blank" rel="noopener">+ List Your Business Free</a>
@@ -581,7 +581,6 @@ img { display: block; max-width: 100%; }
       <div class="fg-toggles">
         <span>Badges</span>
         <div class="toggle-row">
-          <span class="pill-btn" data-f="badge-resident">Connerton Resident</span>
           <span class="pill-btn" data-f="badge-hero">Veteran / First Responder Owned</span>
         </div>
       </div>
@@ -1019,7 +1018,7 @@ async function init() {
   // Load votes in parallel — directory still works if this fails
   await loadVotes();
 
-  ALL = data;
+  ALL = data.filter(b => b.approved !== false && b.badges && b.badges.connertonResident);
   const approved = ALL;
 
   document.getElementById("heroCount").textContent =
