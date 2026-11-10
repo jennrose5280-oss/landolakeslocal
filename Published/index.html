@@ -62,8 +62,8 @@
   .photo-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 10px; border-radius: 16px; overflow: hidden; }
   .photo-main { height: 420px; overflow: hidden; }
   .photo-main img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .photo-stack { display: flex; flex-direction: column; gap: 10px; }
-  .photo-sm { flex: 1; overflow: hidden; }
+  .photo-stack { display: flex; flex-direction: column; gap: 10px; height: 420px; }
+  .photo-sm { flex: 1; overflow: hidden; min-height: 0; }
   .photo-sm img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .photo-caption { margin-top: 16px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.3); text-align: right; }
 
@@ -164,7 +164,8 @@
     .photo-grid { grid-template-columns: 1fr; }
     .photo-stack { flex-direction: row; }
     .photo-main { height: 260px; }
-    .photo-sm { height: 125px; }
+    .photo-sm { height: 125px; flex: 1 1 0; }
+    .photo-stack { height: auto; }
     .nav-links li:not(:last-child) { display: none; }
     .nav-logo { font-size: 15px; }
     .stats-bar-inner { flex-wrap: wrap; }
@@ -194,7 +195,7 @@
     <h1 class="hero-title">Your neighbors.<br><em>Your businesses.</em></h1>
     <p class="hero-sub">Your free local guide to Land O' Lakes — the businesses, events, schools and neighborhoods that make it home. Where locals support locals, and your neighbor's business is just one click away.</p>
     <div class="hero-actions">
-      <a href="/directory/" class="btn-primary">Browse the Directory →</a>
+      <a href="/directory/" class="btn-primary">Browse the Business Directory →</a>
       <a href="#explore" class="btn-ghost">Explore Land O' Lakes</a>
     </div>
   </div>
@@ -205,24 +206,18 @@
   <div class="photo-strip-inner">
     <div class="photo-grid">
       <div class="photo-main">
-        <img src="77-web-or-mls-DJI_0746.jpg" alt="Aerial view of Land O' Lakes">
+        <img src="photos/lake-lily-pads.jpg" alt="Lily pads on a lake in Land O' Lakes, Florida">
       </div>
       <div class="photo-stack">
-        <div class="photo-sm"><img src="82-web-or-mls-DJI_0801.jpg" alt="Connerton fountain tower"></div>
-        <div class="photo-sm"><img src="46-RLD_7952.jpg" alt="Connerton entrance sign"></div>
+        <div class="photo-sm"><img src="photos/pond-sunset.jpg" alt="Sunset reflecting on a pond in Land O' Lakes" style="object-position:50% 52%;"></div>
+        <div class="photo-sm"><img src="photos/magnolia.jpg" alt="Southern magnolia in bloom"></div>
       </div>
       <div class="photo-stack">
-        <div class="photo-sm"><img src="47-RLD_7931.jpg" alt="Connerton clock tower"></div>
-        <div class="photo-sm" style="background: var(--navy); display:flex; align-items:center; justify-content:center; padding: 20px;">
-          <div style="text-align:center;">
-            <div style="font-family:'Playfair Display',serif; font-size:20px; color:var(--white); font-weight:700; margin-bottom:6px; line-height:1.2;">Land O' Lakes</div>
-            <div style="font-size:11px; color:rgba(255,255,255,0.45); letter-spacing:0.1em; text-transform:uppercase;">Pasco County, FL</div>
-            <div style="margin-top:14px; display:inline-block; background:var(--teal); color:#fff; font-size:10px; font-weight:700; padding:4px 12px; border-radius:99px; letter-spacing:0.08em; text-transform:uppercase;">Live Local</div>
-          </div>
-        </div>
+        <div class="photo-sm"><video src="photos/sandhill-cranes.mp4" poster="photos/sandhill-cranes.jpg" autoplay muted loop playsinline aria-label="Sandhill cranes grazing in Land O' Lakes" style="width:100%;height:100%;object-fit:cover;display:block;"></video></div>
+        <div class="photo-sm"><img src="photos/alligator.jpg" alt="Alligator sunning on a lake bank" style="object-position:50% 35%;"></div>
       </div>
     </div>
-    <div class="photo-caption">Around Land O' Lakes · Pasco County, FL</div>
+    <div class="photo-caption">Around Land O' Lakes · Pasco County, FL · Photos by Jennifer Rose</div>
   </div>
 </div>
 
@@ -257,7 +252,7 @@
     <div class="areas-grid">
       <a href="/directory/" class="area-card">
         <div class="area-card-img">
-          <img src="77-web-or-mls-DJI_0746.jpg" alt="Aerial view of Land O' Lakes">
+          <img src="photos/field-sunset.jpg" alt="Sunset over Land O' Lakes" style="object-position:50% 45%;">
           <span class="area-card-badge badge-live">Live Now</span>
         </div>
         <div class="area-card-body">
