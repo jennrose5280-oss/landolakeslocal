@@ -406,8 +406,6 @@
   /* Photo band */
   .photo-band { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 8px; margin-top: 28px; }
   .photo-band img { width: 100%; height: 220px; object-fit: cover; display: block; }
-  .photo-band.two { grid-template-columns: 2fr 1fr; }
-  @media (max-width: 760px) { .photo-band.two img { grid-column: 1 / -1; height: 200px; } }
   @media (max-width: 760px) { .photo-band { grid-template-columns: 1fr 1fr; } .photo-band img:first-child { grid-column: 1 / -1; } .photo-band img { height: 150px; } }
 
   /* SHOP SMALL (GWG "shop local" tiles) */
@@ -809,9 +807,10 @@
   </section>
 
   <!-- PHOTO BAND: Jenn's own holiday photos (2025 season) -->
-  <div class="photo-band two">
+  <div class="photo-band">
     <img src="img/photo-1.jpg" alt="A two-story restaurant trimmed in white Christmas lights, garland and candy-cane-striped columns at night" loading="lazy">
     <img src="img/photo-2.jpg" alt="A frosted Christmas tree glowing with white lights beside light-wrapped trees hung with Spanish moss" loading="lazy">
+    <img src="img/photo-3.jpg" alt="String lights and oversized ornaments hanging from a wooden pergola above a light-wrapped palm tree" loading="lazy">
   </div>
 
   <!-- LIGHTS MAP CTA -->
