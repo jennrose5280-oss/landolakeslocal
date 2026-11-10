@@ -342,11 +342,12 @@
   .nav-cta { background: var(--pink) !important; color: var(--black) !important; padding: 7px 16px; border-radius: 99px; font-size: 12px !important; font-weight: 700 !important; }
 
   /* HERO */
-  .hero { background: var(--cranberry); color: var(--white); text-align: center; padding: clamp(48px, 8vw, 88px) 0 clamp(40px, 6vw, 64px); position: relative; overflow: hidden; }
+  .hero { background: linear-gradient(rgba(122,20,38,.62), rgba(122,20,38,.74)), url("img/hero-lights.jpg") center / cover no-repeat, var(--cranberry); color: var(--white); text-align: center; padding: clamp(48px, 8vw, 88px) 0 clamp(40px, 6vw, 64px); position: relative; overflow: hidden; }
   .hero::before, .hero::after { content: ''; position: absolute; left: 0; right: 0; height: 10px; background: repeating-linear-gradient(90deg, var(--gold) 0 14px, transparent 14px 22px); opacity: .55; }
   .hero::before { top: 14px; } .hero::after { bottom: 14px; }
   .hero-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: rgba(255,255,255,.75); }
   .hero-script { font-size: clamp(64px, 13vw, 128px); line-height: .9; color: var(--white); margin-top: 10px; }
+  .hero-eyebrow, .hero-script, .hero-title, .hero-sub { text-shadow: 0 1px 12px rgba(60,8,18,.55); }
   .hero-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: clamp(26px, 4.5vw, 44px); letter-spacing: -.01em; margin-top: 4px; }
   .hero-sub { max-width: 560px; margin: 16px auto 0; color: rgba(255,255,255,.82); font-size: 16px; }
   .hero-byline { display: inline-block; margin-top: 26px; background: var(--white); color: var(--black); padding: 10px 22px; font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
@@ -405,6 +406,8 @@
   /* Photo band */
   .photo-band { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 8px; margin-top: 28px; }
   .photo-band img { width: 100%; height: 220px; object-fit: cover; display: block; }
+  .photo-band.two { grid-template-columns: 2fr 1fr; }
+  @media (max-width: 760px) { .photo-band.two img { grid-column: 1 / -1; height: 200px; } }
   @media (max-width: 760px) { .photo-band { grid-template-columns: 1fr 1fr; } .photo-band img:first-child { grid-column: 1 / -1; } .photo-band img { height: 150px; } }
 
   /* SHOP SMALL (GWG "shop local" tiles) */
@@ -805,13 +808,11 @@
     </div>
   </section>
 
-  <!-- PHOTO BAND: drop real local holiday photos into /guides/holiday-events-2026/img/ and uncomment
-  <div class="photo-band">
-    <img src="img/photo-1.jpg" alt="">
-    <img src="img/photo-2.jpg" alt="">
-    <img src="img/photo-3.jpg" alt="">
+  <!-- PHOTO BAND: Jenn's own holiday photos (2025 season) -->
+  <div class="photo-band two">
+    <img src="img/photo-1.jpg" alt="A two-story restaurant trimmed in white Christmas lights, garland and candy-cane-striped columns at night" loading="lazy">
+    <img src="img/photo-2.jpg" alt="A frosted Christmas tree glowing with white lights beside light-wrapped trees hung with Spanish moss" loading="lazy">
   </div>
-  -->
 
   <!-- LIGHTS MAP CTA -->
   <section class="block" id="lights-map">
