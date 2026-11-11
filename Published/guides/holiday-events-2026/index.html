@@ -504,7 +504,6 @@
     <a class="chip" href="#happenings">Local happenings</a>
     <a class="chip" href="#pop-ups">Pop-ups</a>
     <a class="chip" href="#shop-small">Shop small</a>
-    <a class="chip" href="#bucket-list">Bucket list</a>
     <a class="chip" href="#lights-map">Lights map</a>
   </div>
 
@@ -785,25 +784,7 @@
         </ul>
       </div>
     </div>
-    <p class="shop-foot">Every one of these is in the free <a href="/connerton/">Connerton business directory →</a></p>
-  </section>
-
-  <!-- BUCKET LIST -->
-  <section class="block" id="bucket-list">
-    <div class="bar"><span class="script">Florida</span><h2>Holiday Bucket List</h2></div>
-    <p class="section-intro">Check them off as you go (your checks stay on this device).</p>
-    <div class="bucket" id="bucket">
-      <label><input type="checkbox"> Watch a lighted boat parade from the shore</label>
-      <label><input type="checkbox"> Drive a light show in pajamas with hot cocoa</label>
-      <label><input type="checkbox"> Cut down a Florida Christmas tree</label>
-      <label><input type="checkbox"> Catch the 7 PM Symphony in Lights show</label>
-      <label><input type="checkbox"> Ice skate outdoors — in Florida</label>
-      <label><input type="checkbox"> Take a golf-cart lights tour of your neighborhood</label>
-      <label><input type="checkbox"> See Santa arrive at a parade</label>
-      <label><input type="checkbox"> Bake cookies for a neighbor</label>
-      <label><input type="checkbox"> Buy one gift from a local small business</label>
-      <label><input type="checkbox"> Donate to a local toy or food drive</label>
-    </div>
+    <p class="shop-foot">Find even more in the free <a href="/directory/">Land O' Lakes business directory →</a></p>
   </section>
 
   <!-- PHOTO BAND: Jenn's own holiday photos (2025 season) -->
@@ -817,9 +798,9 @@
   <section class="block" id="lights-map">
     <div class="cta">
       <span class="script">coming soon</span>
-      <h3>The Land O' Lakes Christmas Lights Map</h3>
-      <p>Know a house that goes all out? Nominate it (yours counts!) and it could land on our neighborhood lights map this December.</p>
-      <a class="btn" href="mailto:jenn@jennrosehomes.com?subject=Christmas%20Lights%20Map%20Nomination&amp;body=Address%20or%20street%3A%0ANeighborhood%3A%0AAnything%20we%20should%20know%3A">Nominate a house →</a>
+      <h3>The Land O' Lakes Holiday Lights Map</h3>
+      <p>The best-lit houses and streets around town, all on one map. Know a house that goes all out? Nominate it — yours counts!</p>
+      <a class="btn" href="/holiday-lights/">See the lights map →</a>
     </div>
   </section>
 
@@ -856,22 +837,5 @@
   </div>
 </footer>
 
-<script>
-  // Bucket list: remember checks on this device only (fails quietly if storage is blocked)
-  (function () {
-    var KEY = 'lol-holiday-bucket-2026';
-    var boxes = document.querySelectorAll('#bucket input');
-    var saved = [];
-    try { saved = JSON.parse(localStorage.getItem(KEY) || '[]'); } catch (e) {}
-    boxes.forEach(function (b, i) {
-      b.checked = saved.indexOf(i) !== -1;
-      b.addEventListener('change', function () {
-        var on = [];
-        boxes.forEach(function (x, j) { if (x.checked) on.push(j); });
-        try { localStorage.setItem(KEY, JSON.stringify(on)); } catch (e) {}
-      });
-    });
-  })();
-</script>
 </body>
 </html>
