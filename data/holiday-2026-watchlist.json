@@ -33,7 +33,7 @@
    "officialLink": "https://www.hillsboroughcountyfair.com/",
    "status": "unconfirmed",
    "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">From Thanks&shy;giving</div></div>\n        <div>\n          <h3>Tampa Bay Festival of Lights &amp; Santa's Village</h3>\n          <div class=\"meta\">Dover &middot; Hillsborough County Fairgrounds, 215 Sydney Washer Rd</div>\n          <p class=\"desc\">A roughly two-mile drive-through with more than a million lights, Florida-themed displays and an animated light tunnel, followed by a walk through Santa's Village. Usually opens Thanksgiving week and runs through late December.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://www.hillsboroughcountyfair.com/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
-   "note": "2026-11-09: Dreamland Amusements (carnival operator) lists Nov 26-Dec 27, 2026; fair site unreachable and no press yet. Needs fair site or 2 outlets."
+   "note": "2026-11-09: Dreamland Amusements (carnival operator) lists Nov 26-Dec 27, 2026; fair site unreachable and no press yet. Needs fair site or 2 outlets. | 2026-11-16: still only Dreamland Amusements (Nov 26-Dec 27); no fair-site confirmation or press found."
   },
   {
    "name": "Light Up the Angelus",
@@ -95,7 +95,7 @@
    "officialLink": "http://www.celebratepinellaspark.com/",
    "status": "unconfirmed",
    "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>Pinellas Park Christmas Parade</h3>\n          <div class=\"meta\">Park Blvd, Pinellas Park &middot; 6 PM</div>\n          <p class=\"desc\">A long-running evening parade down Park Boulevard. Held Saturday, Dec. 13 last year.</p>\n          <div class=\"row\"><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"http://www.celebratepinellaspark.com/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
-   "note": "2026-11-09: City of Pinellas Park calendar lists Sat Dec 12, 2026, 6-10 PM; organizer site not reachable, no press yet (one source)."
+   "note": "2026-11-09: City of Pinellas Park calendar lists Sat Dec 12, 2026, 6-10 PM; organizer site not reachable, no press yet (one source). | 2026-11-16: still one source; I Love the Burg '51st parade' article is an older year (Sat Dec 14)."
   },
   {
    "name": "Cotee River Christmas Boat Parade",
@@ -109,7 +109,7 @@
    "officialLink": "https://www.alafiaboatparade.com",
    "status": "unconfirmed",
    "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early Dec</div></div>\n        <div>\n          <h3>Alafia Lighted Boat Parade</h3>\n          <div class=\"meta\">Riverview &middot; Riverview Park &amp; Civic Center</div>\n          <p class=\"desc\">A community boat parade on the Alafia River. Held Saturday, Dec. 6 last year.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.alafiaboatparade.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
-   "note": "2026-11-09: Osprey Observer (Oct 2, 2026) says Sat Dec 5, 2026, 42nd annual; only one source so far."
+   "note": "2026-11-09: Osprey Observer (Oct 2, 2026) says Sat Dec 5, 2026, 42nd annual; only one source so far. | 2026-11-16: Osprey Observer + Florida Rambler (pattern-style 'first Saturday') say Dec 5; organizer site not reachable. Still unconfirmed."
   },
   {
    "name": "Tarpon Springs Illuminated Holiday Boat Parade",
@@ -170,7 +170,7 @@
    "name": "Richey Suncoast Theatre holiday shows (6237 Grand Blvd, New Port Richey)",
    "officialLink": null,
    "status": "unconfirmed",
-   "note": "Jenn's tip, 2026-11-16; need 2026 show dates."
+   "note": "Jenn's tip, 2026-11-16; need 2026 show dates. | 2026-11-16: only ticket resellers (TickPick) list a 'Holiday Variety Show' Nov 19-22, 2026; not on theatre's own site yet."
   },
   {
    "name": "Historic Church Street Christmas (Church Ave, Dade City)",
@@ -185,43 +185,43 @@
    "status": "on page, dates TBA",
    "where": "Instagram @rrealtacos",
    "note": "Jenn's request. Atlanta locations run a Christmas pop-up through Dec 31; Tampa opened Oct 13, 2026. 2026-11-09: rrealtacos.com shows a chain-wide \"Christmas Bar Coming Soon\" banner, no Tampa dates yet.",
-   "lastChecked": "2026-11-09"
+   "lastChecked": "2026-11-16"
   },
   {
    "name": "Miracle at Strandhill Public (Tampa)",
    "status": "on page, confirmed returning, dates TBA",
    "where": "https://www.miraclepopup.com/locations-2026",
-   "lastChecked": "2026-11-09",
+   "lastChecked": "2026-11-16",
    "note": "2026-11-09: listed on miraclepopup.com/locations-2026, no dates/hours yet."
   },
   {
    "name": "Miracle at Bar Mezzo (St. Pete)",
    "status": "on page, confirmed returning, dates TBA",
    "where": "https://www.miraclepopup.com/locations-2026",
-   "lastChecked": "2026-11-09",
+   "lastChecked": "2026-11-16",
    "note": "2026-11-09: listed on miraclepopup.com/locations-2026, no dates/hours yet."
   },
   {
    "name": "Sippin' Santa (Dunedin, The Honu, in past years)",
    "status": "not on page",
    "where": "https://sippinsantapopup.com",
-   "lastChecked": "2026-11-09",
+   "lastChecked": "2026-11-16",
    "note": "2026-11-09: 2026 locations list only Boynton Beach & New Smyrna Beach in FL; no Tampa Bay spot."
   },
   {
    "name": "Santa's Social Club at Sonder Social Club (Dunedin)",
    "status": "not on page",
-   "lastChecked": "2026-11-09"
+   "lastChecked": "2026-11-16"
   },
   {
    "name": "Blitz Inn at Barterhouse Ybor",
    "status": "not on page",
-   "lastChecked": "2026-11-09"
+   "lastChecked": "2026-11-16"
   },
   {
    "name": "XMAS Bar St. Pete",
    "status": "not on page",
-   "lastChecked": "2026-11-09"
+   "lastChecked": "2026-11-16"
   }
  ]
 }
