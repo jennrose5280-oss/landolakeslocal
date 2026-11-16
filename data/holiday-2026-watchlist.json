@@ -80,7 +80,7 @@
   {
    "name": "New Port Richey Holiday Street Parade",
    "officialLink": "https://www.cityofnewportrichey.org",
-   "status": "unconfirmed",
+   "status": "published",
    "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Mid-Dec</div></div>\n        <div>\n          <h3>New Port Richey Holiday Street Parade</h3>\n          <div class=\"meta\">Downtown New Port Richey &middot; Grand Blvd to Main St &middot; 6 PM</div>\n          <p class=\"desc\">Around 100 entries \u2014 marching bands, floats and Santa \u2014 looping Orange Lake and finishing on Main Street. Held Saturday, Dec. 13 last year.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill free\">Free</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.cityofnewportrichey.org\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n"
   },
   {
@@ -100,7 +100,7 @@
   {
    "name": "Cotee River Christmas Boat Parade",
    "officialLink": "https://www.visitnpr.com",
-   "status": "unconfirmed",
+   "status": "published",
    "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">DEC</div><div class=\"day soft\">Early Dec</div></div>\n        <div>\n          <h3>Cotee River Christmas Boat Parade</h3>\n          <div class=\"meta\">New Port Richey &middot; Miller's Bayou to Sims Park</div>\n          <p class=\"desc\">Decorated boats cruise the Pithlachascotee River into downtown New Port Richey. Watch from Sims Park.</p>\n          <div class=\"row\"><span class=\"pill pasco\">Pasco</span><span class=\"pill tba\">2026 date TBA</span><a class=\"more\" href=\"https://www.visitnpr.com\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
    "note": "2026-11-09: only an aggregator lists Sat Dec 5, 2026; organizer not yet confirmed."
   },
@@ -159,6 +159,24 @@
    "status": "published",
    "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">Select nights</div></div>\n        <div>\n          <h3>Country Christmas at HarvestMoon Fun Farm</h3>\n          <div class=\"meta\">Masaryktown &middot; 15990 Stur St</div>\n          <p class=\"desc\">Christmas lights, an enchanted hayride with carols, Santa visits and the petting farm, on select nights.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://www.harvestmoonfunfarm.com/countrychristmas\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
    "publishedOn": "2026-11-09"
+  },
+  {
+   "name": "Snowcat Ridge Alpine Snow Park (Dade City)",
+   "officialLink": "https://snowcatridge.com",
+   "status": "unconfirmed",
+   "note": "2026-27 season dates not confirmed yet (Jenn's tip, 2026-11-16)."
+  },
+  {
+   "name": "Richey Suncoast Theatre holiday shows (6237 Grand Blvd, New Port Richey)",
+   "officialLink": null,
+   "status": "unconfirmed",
+   "note": "Jenn's tip, 2026-11-16; need 2026 show dates."
+  },
+  {
+   "name": "Historic Church Street Christmas (Church Ave, Dade City)",
+   "officialLink": null,
+   "status": "unconfirmed",
+   "note": "Jenn's tip, 2026-11-16; published listings disagree on dates."
   }
  ],
  "popUpsToWatch": [
