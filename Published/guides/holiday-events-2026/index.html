@@ -538,6 +538,9 @@
     body { background: #fff; }
     .event, .shop-card, .about, .bucket { break-inside: avoid; }
   }
+.sw-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:4px 0 6px}
+.sw-gallery img,.sw-gallery video{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;display:block;background:#111}
+.sw-credit{font-size:12px;color:#7a6f63;margin:0 0 10px;font-style:italic}
 </style>
 </head>
 <body>
@@ -824,6 +827,12 @@
           <h3>Stonewater Grill, Right Here in Land O' Lakes</h3>
           <div class="meta">Land O' Lakes &middot; 4422 Land O' Lakes Blvd</div>
           <p class="desc">You don't have to drive to Tampa for holiday sparkle. Our own lakeside spot on Land O' Lakes Blvd is already decked out for Christmas. Grab a seat by the water for seafood, steaks and a festive drink, and support a local favorite while you're at it.</p>
+          <div class="sw-gallery">
+            <video src="/photos/stonewater-walk.mp4" poster="/photos/stonewater-deck.jpg" autoplay muted loop playsinline aria-label="Walking the lit-up deck at Stonewater Grill"></video>
+            <img src="/photos/stonewater-angels.jpg" alt="Lighted angels on the dock at Stonewater Grill" loading="lazy">
+            <img src="/photos/stonewater-tree.jpg" alt="Flocked Christmas tree on Stonewater Grill's lakeside deck" loading="lazy">
+          </div>
+          <p class="sw-credit">Last year's decorations &middot; Photos by Jennifer Rose</p>
           <div class="row"><span class="pill ok">Decorated now</span><span class="pill pasco">Pasco</span><a class="more" href="https://www.stonewaterrestaurant.com/" target="_blank" rel="noopener">Stonewater Grill →</a></div>
         </div>
       </article>
