@@ -10,6 +10,7 @@
 <meta property="og:title" content="Land O' Lakes Holiday Lights Map 2026">
 <meta property="og:description" content="The best-lit houses and streets around Land O' Lakes, all on one map. Nominate a house!">
 <meta property="og:url" content="https://landolakeslocal.com/holiday-lights/">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&family=Allura&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -192,7 +193,21 @@
   .step .num { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 700; color: var(--cranberry); line-height: 1; }
   .step h3 { font-family: 'Playfair Display', serif; font-size: 18px; margin: 6px 0 4px; }
   .step p { font-size: 14px; color: #444; }
-  @media (max-width: 760px) { .steps { grid-template-columns: 1fr; } .map-wrap iframe { height: 420px; } }
+  #lights-map { width: 100%; height: 560px; }
+  .map-count { font-size: 13px; color: var(--gray-600); margin: 10px 2px 0; }
+  .map-actions { margin-top: 4px; }
+  .pin { width: 18px; height: 18px; border-radius: 50%; background: var(--cranberry); border: 3px solid var(--white); box-shadow: 0 0 0 2px var(--gold), 0 0 12px rgba(212,169,79,.9); }
+  .leaflet-popup-content { font-family: 'DM Sans', sans-serif; font-size: 14px; line-height: 1.45; }
+  .leaflet-popup-content strong { font-family: 'Playfair Display', serif; font-size: 16px; display: block; }
+  .leaflet-popup-content a { color: var(--cranberry); font-weight: 700; }
+  .lights-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 16px; }
+  .lights-list li { background: var(--white); border: 1px solid #ece4d4; padding: 14px 16px; }
+  .lights-list .addr { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 16px; }
+  .lights-list .town { font-size: 13px; color: var(--gray-600); }
+  .lights-list .lnote { font-size: 14px; color: #444; margin-top: 4px; }
+  .lights-list a { font-size: 13px; font-weight: 700; color: var(--cranberry); text-decoration: none; }
+  .lights-list .own { white-space: nowrap; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; background: var(--cream-deep); color: #6b5a3a; padding: 2px 8px; border-radius: 99px; margin-left: 6px; vertical-align: 2px; }
+  @media (max-width: 760px) { .steps { grid-template-columns: 1fr; } .map-wrap iframe { height: 420px; } #lights-map { height: 440px; } }
 </style>
 </head>
 <body>
@@ -222,21 +237,27 @@
   <section class="block" id="map">
     <div class="bar"><span class="script">The</span><h2>Lights Map</h2></div>
     <div class="map-wrap">
-      <!-- MAP: when the Google My Maps map is ready, replace the placeholder div below with:
-           <iframe src="https://www.google.com/maps/d/embed?mid=YOUR_MAP_ID" title="Land O' Lakes Holiday Lights Map" loading="lazy"></iframe> -->
-      <div class="map-placeholder">
+      <!-- The map is drawn from /data/holiday-lights.json, which the "Lights Map Tools" script in the
+           responses Google Sheet publishes. Until at least one display is approved, the placeholder shows. -->
+      <div class="map-placeholder" id="map-placeholder">
         <span class="script">coming soon</span>
-        <p><strong>The map goes live in December</strong> once the lights go up. Nominations are open now — help us find the houses that go all out.</p>
-        <a class="btn" href="mailto:jenn@jennrosehomes.com?subject=Holiday%20Lights%20Map%20Nomination&amp;body=Address%20or%20street%3A%0ANeighborhood%3A%0ABest%20time%20to%20see%20it%20(evenings%2C%20weekends%2C%20etc.)%3A%0AIs%20this%20your%20house%3F%20(yes%2Fno)%3A%0AAnything%20we%20should%20know%3A">Nominate a house →</a>
+        <p><strong>The first houses go on the map as soon as they're approved.</strong> Nominations are open now — help us find the houses that go all out.</p>
+        <a class="btn" href="https://forms.gle/fzzBVC4wTnAoD5KC8" target="_blank" rel="noopener">Nominate a house →</a>
       </div>
+      <div id="lights-map" hidden></div>
+    </div>
+    <div id="map-extra" hidden>
+      <p class="map-count" id="map-count"></p>
+      <div class="map-actions"><a class="btn" href="https://forms.gle/fzzBVC4wTnAoD5KC8" target="_blank" rel="noopener">Add a house to the map →</a></div>
+      <ul class="lights-list" id="lights-list"></ul>
     </div>
   </section>
 
   <section class="block" id="how-it-works">
     <div class="bar"><span class="script">How it</span><h2>Works</h2></div>
     <div class="steps">
-      <div class="step"><div class="num">1</div><h3>Nominate</h3><p>Send us the street or address of a display you love — your own house counts too.</p></div>
-      <div class="step"><div class="num">2</div><h3>We map it</h3><p>Each display gets a pin on the map with the best time to see it.</p></div>
+      <div class="step"><div class="num">1</div><h3>Nominate</h3><p>Fill out the <a href="https://forms.gle/fzzBVC4wTnAoD5KC8" target="_blank" rel="noopener">quick nomination form</a> with the address of a display you love — your own house counts too.</p></div>
+      <div class="step"><div class="num">2</div><h3>We map it</h3><p>We review every submission, then each approved display gets its own pin on the map.</p></div>
       <div class="step"><div class="num">3</div><h3>Go see the lights</h3><p>Open the map on your phone, pick a route, and enjoy the show. Please stay on the street and respect each home's privacy.</p></div>
     </div>
   </section>
@@ -250,7 +271,7 @@
     </div>
   </section>
 
-  <p class="updated">Nominations: <a href="mailto:jenn@jennrosehomes.com?subject=Holiday%20Lights%20Map%20Nomination&amp;body=Address%20or%20street%3A%0ANeighborhood%3A%0ABest%20time%20to%20see%20it%20(evenings%2C%20weekends%2C%20etc.)%3A%0AIs%20this%20your%20house%3F%20(yes%2Fno)%3A%0AAnything%20we%20should%20know%3A">jenn@jennrosehomes.com</a></p>
+  <p class="updated">Nominate a house: <a href="https://forms.gle/fzzBVC4wTnAoD5KC8" target="_blank" rel="noopener">holiday lights map form</a> &middot; Questions? <a href="mailto:jenn@jennrosehomes.com?subject=Holiday%20Lights%20Map">jenn@jennrosehomes.com</a></p>
 </main>
 
 <footer>
@@ -267,5 +288,41 @@
     </ul>
   </div>
 </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function () {
+  function esc(t) { return String(t == null ? '' : t).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  fetch('/data/holiday-lights.json', { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (data) {
+      var list = (data && data.displays || []).filter(function (d) { return isFinite(d.lat) && isFinite(d.lng); });
+      if (!list.length || typeof L === 'undefined') return;
+      document.getElementById('map-placeholder').style.display = 'none';
+      var el = document.getElementById('lights-map'); el.hidden = false;
+      document.getElementById('map-extra').hidden = false;
+      var map = L.map(el, { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19, subdomains: 'abcd',
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+      }).addTo(map);
+      var icon = L.divIcon({ className: '', html: '<div class="pin"></div>', iconSize: [18, 18], iconAnchor: [9, 9], popupAnchor: [0, -10] });
+      var bounds = [], ul = document.getElementById('lights-list');
+      list.sort(function (a, b) { return (a.city + a.label).localeCompare(b.city + b.label); });
+      list.forEach(function (d) {
+        var dir = 'https://www.google.com/maps/dir/?api=1&destination=' + d.lat + ',' + d.lng;
+        var town = [d.city, d.zip].filter(Boolean).join(' ');
+        var html = '<strong>' + esc(d.label) + '</strong>' + esc(town) + (d.note ? '<br>' + esc(d.note) : '') + '<br><a href="' + dir + '" target="_blank" rel="noopener">Directions →</a>';
+        L.marker([d.lat, d.lng], { icon: icon, title: d.label }).addTo(map).bindPopup(html);
+        bounds.push([d.lat, d.lng]);
+        var li = document.createElement('li');
+        li.innerHTML = '<div class="addr">' + esc(d.label) + (d.ownHome ? '<span class="own">Homeowner entry</span>' : '') + '</div><div class="town">' + esc(town) + '</div>' + (d.note ? '<div class="lnote">' + esc(d.note) + '</div>' : '') + '<a href="' + dir + '" target="_blank" rel="noopener">Directions →</a>';
+        ul.appendChild(li);
+      });
+      if (bounds.length === 1) map.setView(bounds[0], 15); else map.fitBounds(bounds, { padding: [30, 30], maxZoom: 15 });
+      document.getElementById('map-count').textContent = list.length + (list.length === 1 ? ' display' : ' displays') + ' on the map' + (data.updated ? ' \u00b7 updated ' + new Date(data.updated).toLocaleDateString('en-US', { month: 'long', day: 'numeric' }) : '') + '. Please stay on the street and respect each home\u2019s privacy.';
+    })
+    .catch(function () {});
+})();
+</script>
 </body>
 </html>
