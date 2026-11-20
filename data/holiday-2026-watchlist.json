@@ -31,10 +31,11 @@
   },
   {
    "name": "Tampa Bay Festival of Lights & Santa's Village",
-   "officialLink": "https://www.hillsboroughcountyfair.com/",
-   "status": "unconfirmed",
+   "officialLink": "https://www.hillsboroughcountyfair.com/events/2026/fol-2026-fol",
+   "status": "published",
    "cardHtml": "      <article class=\"event\">\n        <div class=\"date\"><div class=\"mon\">NOV\u2013DEC</div><div class=\"day soft\">From Thanks&shy;giving</div></div>\n        <div>\n          <h3>Tampa Bay Festival of Lights &amp; Santa's Village</h3>\n          <div class=\"meta\">Dover &middot; Hillsborough County Fairgrounds, 215 Sydney Washer Rd</div>\n          <p class=\"desc\">A roughly two-mile drive-through with more than a million lights, Florida-themed displays and an animated light tunnel, followed by a walk through Santa's Village. Usually opens Thanksgiving week and runs through late December.</p>\n          <div class=\"row\"><span class=\"pill tba\">2026 dates TBA</span><a class=\"more\" href=\"https://www.hillsboroughcountyfair.com/\" target=\"_blank\" rel=\"noopener\">Official info \u2192</a></div>\n        </div>\n      </article>\n",
-   "note": "2026-11-09: Dreamland Amusements (carnival operator) lists Nov 26-Dec 27, 2026; fair site unreachable and no press yet. Needs fair site or 2 outlets. | 2026-11-16: still only Dreamland Amusements (Nov 26-Dec 27); no fair-site confirmation or press found. | 2026-11-19: still no fair-site or press confirmation (Visit Tampa Bay listing is 2025)."
+   "note": "2026-11-09: Dreamland Amusements (carnival operator) lists Nov 26-Dec 27, 2026; fair site unreachable and no press yet. Needs fair site or 2 outlets. | 2026-11-16: still only Dreamland Amusements (Nov 26-Dec 27); no fair-site confirmation or press found. | 2026-11-19: still no fair-site or press confirmation (Visit Tampa Bay listing is 2025). | 2026-11-20: confirmed on the organizer's site (hillsboroughcountyfair.com event + ticket pages): Nov 26 - Dec 27, 2026, gates 6 PM; $32/car with Santa's Village, $27 drive-thru only. Jenn shared the link. Card added.",
+   "publishedOn": "2026-11-20"
   },
   {
    "name": "Light Up the Angelus",
